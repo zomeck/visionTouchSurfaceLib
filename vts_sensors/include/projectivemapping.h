@@ -29,3 +29,4 @@ private:
 };
 
 #endif // PROJECTIVEMAPPING_H
+

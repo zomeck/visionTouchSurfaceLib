@@ -1,10 +1,12 @@
 #include "projectivemapping.h"
 
+
 ProjectiveMapping::ProjectiveMapping()
 {
     rect_corners.assign( 4,Point2f(0,0) );
     transformationMatrix=Mat::zeros(1,1,CV_32F);
 }
+
 
 ProjectiveMapping::ProjectiveMapping(int width, int height)
 {

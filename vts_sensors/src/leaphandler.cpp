@@ -1,5 +1,6 @@
 #include "../include/leaphandler.h"
 
+
 LeapHandler::LeapHandler()
 {
     depthThresh=20;

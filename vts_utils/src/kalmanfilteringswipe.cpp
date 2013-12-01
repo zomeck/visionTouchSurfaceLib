@@ -23,6 +23,7 @@ void KalmanFilteringSwipe::initialiseGesture(Point initialObs, float initialStat
     kalmanvec.clear();
 }
 
+
 Point KalmanFilteringSwipe::predictUpdateUsingObs(Point observation)
 {
     KF->predict();

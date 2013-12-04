@@ -115,6 +115,7 @@ void TappingManager::generateGestureData(FrameData &params)
 
             Point2f cHand=params.hands->at(0).centroid;
             RotatedRect fBB=minAreaRect( params.hands->at(0).fingers.at(0).contour );
+            Point2f centerTip=fBB.center;
 
 
             Point2f vertices[4];
@@ -146,9 +147,19 @@ void TappingManager::generateGestureData(FrameData &params)
             //idxMax and idx2ndMax contain the furthest points from the centroid ( even if both distances are equal )
 
 
+            Point2f midPoint;
+            midPoint.x=( vertices[idxMax].x + vertices[idx2ndMax].x )/2;
+            midPoint.y=( vertices[idxMax].y + vertices[idx2ndMax].y )/2;
 
-            center.x=( vertices[idxMax].x + vertices[idx2ndMax].x )/2;
-            center.y=( vertices[idxMax].y + vertices[idx2ndMax].y )/2;
+            Point2f vect=midPoint-centerTip;
+            vect.x/=norm(vect);
+            vect.y/=norm(vect);
+
+            //center.x=( vertices[idxMax].x + vertices[idx2ndMax].x )/2;
+            //center.y=( vertices[idxMax].y + vertices[idx2ndMax].y )/2;
+
+            center.x=midPoint.x + vect.x;
+            center.y=midPoint.y + vect.y;
 
             /*
             Mat draw=Mat::zeros( params.depthMap.size(),CV_8UC3 );

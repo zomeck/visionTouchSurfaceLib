@@ -1,0 +1,5 @@
+<map id="SwipeManager" name="SwipeManager">
+<area shape="rect" id="node2" href="$class_gesture_manager.html" title="The GestureManager class is a pure abstract class that provides an interface to create any gesture an..." alt="" coords="7,101,124,131"/>
+<area shape="rect" id="node4" href="$class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp..." alt="" coords="5,5,125,35"/>
+<area shape="rect" id="node6" href="$class_kalman_filtering_swipe.html" title="KalmanFilteringSwipe" alt="" coords="148,101,295,131"/>
+</map>

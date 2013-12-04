@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp..." alt="" coords="5,85,125,115"/>
+<area shape="rect" id="node3" href="$class_alt_tab_event_manager.html" title="AltTabEventManager" alt="" coords="201,5,345,35"/>
+<area shape="rect" id="node5" href="$class_scroll_up_down_manager.html" title="ScrollUpDownManager" alt="" coords="196,59,351,88"/>
+<area shape="rect" id="node7" href="$class_single_click_hold_event_manager.html" title="SingleClickHoldEventManager" alt="" coords="175,112,372,141"/>
+<area shape="rect" id="node9" href="$class_store_hand_mask.html" title="StoreHandMask" alt="" coords="216,165,331,195"/>
+</map>

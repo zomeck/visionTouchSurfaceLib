@@ -1,0 +1,7 @@
+<map id="Leap::Gesture" name="Leap::Gesture">
+<area shape="rect" id="node5" href="$class_leap_1_1_circle_gesture.html" title="Leap::CircleGesture" alt="" coords="5,160,144,189"/>
+<area shape="rect" id="node7" href="$class_leap_1_1_key_tap_gesture.html" title="Leap::KeyTapGesture" alt="" coords="168,160,317,189"/>
+<area shape="rect" id="node9" href="$class_leap_1_1_screen_tap_gesture.html" title="Leap::ScreenTapGesture" alt="" coords="341,160,507,189"/>
+<area shape="rect" id="node11" href="$class_leap_1_1_swipe_gesture.html" title="Leap::SwipeGesture" alt="" coords="531,160,669,189"/>
+<area shape="rect" id="node2" href="$class_leap_1_1_interface.html" title="Leap::Interface" alt="" coords="279,5,388,35"/>
+</map>

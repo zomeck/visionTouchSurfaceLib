@@ -1,0 +1,24 @@
+<map id="Leap::Interface" name="Leap::Interface">
+<area shape="rect" id="node3" href="$class_leap_1_1_config.html" title="Leap::Config" alt="" coords="187,5,283,35"/>
+<area shape="rect" id="node5" href="$class_leap_1_1_controller.html" title="Leap::Controller" alt="" coords="177,59,292,88"/>
+<area shape="rect" id="node7" href="$class_leap_1_1_device.html" title="Leap::Device" alt="" coords="185,112,284,141"/>
+<area shape="rect" id="node9" href="$class_leap_1_1_device_list.html" title="Leap::DeviceList" alt="" coords="175,165,295,195"/>
+<area shape="rect" id="node11" href="$class_leap_1_1_finger_list.html" title="Leap::FingerList" alt="" coords="177,219,292,248"/>
+<area shape="rect" id="node13" href="$class_leap_1_1_frame.html" title="Leap::Frame" alt="" coords="188,272,281,301"/>
+<area shape="rect" id="node15" href="$class_leap_1_1_gesture.html" title="Leap::Gesture" alt="" coords="183,325,287,355"/>
+<area shape="rect" id="node25" href="$class_leap_1_1_gesture_list.html" title="Leap::GestureList" alt="" coords="172,379,297,408"/>
+<area shape="rect" id="node27" href="$class_leap_1_1_hand.html" title="Leap::Hand" alt="" coords="191,432,279,461"/>
+<area shape="rect" id="node29" href="$class_leap_1_1_hand_list.html" title="Leap::HandList" alt="" coords="180,485,289,515"/>
+<area shape="rect" id="node31" href="$class_leap_1_1_interaction_box.html" title="Leap::InteractionBox" alt="" coords="164,539,305,568"/>
+<area shape="rect" id="node33" href="$class_leap_1_1_pointable.html" title="Leap::Pointable" alt="" coords="179,592,291,621"/>
+<area shape="rect" id="node39" href="$class_leap_1_1_pointable_list.html" title="Leap::PointableList" alt="" coords="168,645,301,675"/>
+<area shape="rect" id="node41" href="$class_leap_1_1_screen.html" title="Leap::Screen" alt="" coords="185,699,284,728"/>
+<area shape="rect" id="node43" href="$class_leap_1_1_screen_list.html" title="Leap::ScreenList" alt="" coords="175,752,295,781"/>
+<area shape="rect" id="node45" href="$class_leap_1_1_tool_list.html" title="Leap::ToolList" alt="" coords="183,805,287,835"/>
+<area shape="rect" id="node17" href="$class_leap_1_1_circle_gesture.html" title="Leap::CircleGesture" alt="" coords="369,245,508,275"/>
+<area shape="rect" id="node19" href="$class_leap_1_1_key_tap_gesture.html" title="Leap::KeyTapGesture" alt="" coords="364,299,513,328"/>
+<area shape="rect" id="node21" href="$class_leap_1_1_screen_tap_gesture.html" title="Leap::ScreenTapGesture" alt="" coords="356,352,521,381"/>
+<area shape="rect" id="node23" href="$class_leap_1_1_swipe_gesture.html" title="Leap::SwipeGesture" alt="" coords="369,405,508,435"/>
+<area shape="rect" id="node35" href="$class_leap_1_1_finger.html" title="Leap::Finger" alt="" coords="392,565,485,595"/>
+<area shape="rect" id="node37" href="$class_leap_1_1_tool.html" title="Leap::Tool" alt="" coords="397,619,480,648"/>
+</map>

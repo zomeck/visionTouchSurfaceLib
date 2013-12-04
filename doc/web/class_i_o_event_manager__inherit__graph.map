@@ -1,0 +1,6 @@
+<map id="IOEventManager" name="IOEventManager">
+<area shape="rect" id="node3" href="$class_alt_tab_event_manager.html" title="AltTabEventManager" alt="" coords="5,83,149,112"/>
+<area shape="rect" id="node5" href="$class_scroll_up_down_manager.html" title="ScrollUpDownManager" alt="" coords="173,83,328,112"/>
+<area shape="rect" id="node7" href="$class_single_click_hold_event_manager.html" title="SingleClickHoldEventManager" alt="" coords="352,83,549,112"/>
+<area shape="rect" id="node9" href="$class_store_hand_mask.html" title="StoreHandMask" alt="" coords="573,83,688,112"/>
+</map>

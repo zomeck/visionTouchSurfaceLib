@@ -5,7 +5,8 @@ cmake_minimum_required(VERSION 2.8)
 include(FindPkgConfig)
 SET(${PROJECT_NAME} ${PROJECT_SOURCE_DIR})
 
-set( CMAKE_CXX_FLAGS_RELEASE "-O3 -j4" )
+set( CMAKE_CXX_FLAGS_RELEASE "-O3" )
+
 
 MESSAGE ( STATUS )
 MESSAGE ( STATUS "Building visionTouchSurface library:" )

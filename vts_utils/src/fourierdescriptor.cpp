@@ -80,22 +80,25 @@ void FourierDescriptor::calcCentroidDistFD(vector<Point2i> &boundary, int numFD,
     dst= FDs.clone();
 }
 
-int FourierDescriptor::findMatchInDictionary(vector<Point2i> &boundary, string &distMetric, Mat *result, int newBoundaryLength)
+int FourierDescriptor::findMatchInDictionary(vector<Point2i> &boundary, string &distMetric, double &distance, int numFDtoUse, int newBoundaryLength)
 {
+    if( numFDtoUse<=0 ){
+        numFDtoUse=numFDdict;
+    }
     //get CDFD
     Mat testFD;
-    calcCentroidDistFD(boundary,numFDdict,testFD,newBoundaryLength);
-    int matchClass=findMatchInDictionary(testFD,distMetric,result);
+    calcCentroidDistFD(boundary,numFDtoUse,testFD,newBoundaryLength);
+    int matchClass=findMatchInDictionary(testFD,distMetric,distance);
     return matchClass;
 
 }
 
-int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, Mat *result)
+int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, double &distance )
 {
-    int numFD=0;
+    int numFD=testFD.cols;
     if(testFD.rows==1)
     {
-        numFD=testFD.cols;
+        //numFD=testFD.cols;
     }else{
         cerr<<"Fourier descriptor to test must be Mat with one row."<<endl;
     }
@@ -105,12 +108,18 @@ int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, Ma
     }
 
     //compare with dictionary
-    Mat FDtoTest(sizeDict, numFDdict, CV_32F);
+    //Mat FDtoTest(sizeDict, numFDdict, CV_32F);
+    Mat FDtoTest(sizeDict, numFD, CV_32F);
     repeat(testFD, sizeDict, 1, FDtoTest);
     Mat dist;
+    Mat subDict= FDdict->operator ()( cv::Rect(0,0,numFD,sizeDict) );
+    //Mat test=*FDdict;
+    //Mat subDict( test,cv::Rect(0,0,numFD,sizeDict) );
+    //Mat subDict=test( cv::Rect(0,0,numFD,sizeDict) );
+    Mat diff=FDtoTest-subDict;
     if(distMetric.compare("2norm")==0)
     {
-        Mat diff=FDtoTest-(*FDdict);
+
         Mat diffSq, sumDiffSq;
         cv::pow(diff, 2, diffSq);
         reduce(diffSq,sumDiffSq,1, CV_REDUCE_SUM);
@@ -120,7 +129,7 @@ int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, Ma
     else{
         if(distMetric.compare("1norm")==0)
         {
-            Mat diff=FDtoTest-(*FDdict);
+            //Mat diff=FDtoTest-(*FDdict);
             Mat diffAbs;
             diffAbs = abs(diff);
             reduce(diffAbs,dist,1, CV_REDUCE_SUM);
@@ -128,7 +137,7 @@ int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, Ma
         else{
             if(distMetric.compare("canberra")==0)
             {
-                Mat diff=FDtoTest-(*FDdict);
+                //Mat diff=FDtoTest-(*FDdict);
                 Mat diffAbs, diffAbsScale;
                 diffAbs = abs(diff);
                 Mat scale = 1/(abs(FDtoTest)+abs((*FDdict)));
@@ -146,8 +155,9 @@ int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, Ma
     double minVal, maxVal;
     int minIdx, maxIdx;
     minMaxIdx(dist,&minVal, &maxVal, &minIdx, &maxIdx);
+    distance=minVal;
     int matchClass = dictClass[minIdx];
-    *result = dist;
+    //result = dist.clone();
     return matchClass;
 
 }

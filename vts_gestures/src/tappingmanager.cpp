@@ -17,7 +17,7 @@ void TappingManager::onStatusFinish(FrameData &params)
 {
     Point2i kmCMapped=kmMouse.predictWithoutObs();
 
-    cout<<"TAPPING end "<<kmCMapped <<endl;
+    //cout<<"TAPPING end "<<kmCMapped <<endl;
 
     EventData eventParam;
     eventParam.frameData=&params;
@@ -72,7 +72,7 @@ void TappingManager::onStatusInit(FrameData &params)
     eventParam.mousePosition=cMapped;
     eventParam.offset=0;
 
-    cout<<"TAPPING init "<<cMapped<<endl;
+    //cout<<"TAPPING init "<<cMapped<<endl;
 
     iomanagerMutex.lock();
 

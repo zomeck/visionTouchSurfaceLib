@@ -83,8 +83,11 @@ void SwipeManager::onStatusActive(FrameData &params)
     EventData eventParam;
     eventParam.frameData=&params;
     eventParam.mousePosition=kmCentroidHand;
-    eventParam.offset=norm( kmCentroidHand-prevCentroidHand );
+    float offset=norm( kmCentroidHand-prevCentroidHand );
 
+    if( (offset)>12 ){
+        eventParam.offset=copysign( offset,kmCentroidHand.x-prevCentroidHand.x );
+    }
     iomanagerMutex.lock();
 
     iomanager->gestureInProgressUpdate( eventParam );

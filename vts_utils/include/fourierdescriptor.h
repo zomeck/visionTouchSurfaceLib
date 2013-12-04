@@ -17,10 +17,11 @@ public:
     FourierDescriptor();
     FourierDescriptor(const string &fileName);
     void loadDictionary(const string &fileName);
-    int findMatchInDictionary(vector<Point2i> &boundary, string &distMetric,Mat *result=0, int newBoundaryLength=64);
+    int findMatchInDictionary(vector<Point2i> &boundary, string &distMetric, double &distance, int numFDtoUse=0, int newBoundaryLength=64);
     void calcCentroidDistFD(vector<Point2i> &boundary, int numFD, Mat &dst, int newBoundaryLength=64);
-    int findMatchInDictionary(Mat &testFD, string &distMetric, Mat *result=0);
+    int findMatchInDictionary(Mat &testFD, string &distMetric, double &distance );
     ~FourierDescriptor();
+
 
 private:
     int sizeDict,numFDdict;

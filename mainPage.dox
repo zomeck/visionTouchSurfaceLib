@@ -2,17 +2,14 @@
 /*! \mainpage Welcome to Vision Touch Surface Library!
  *
  * \section intro_sec Introduction
- This libraries give some tools to be able to convert a regular monitor into a touch surface using the kinect.
+ These libraries give some tools to be able to convert a regular monitor into a touch surface using the kinect.
  <ul style="    list-style: none outside none;">
           <li><a href="https://github.com/zomeck/visionTouchSurfaceLib/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/zomeck/visionTouchSurfaceLib/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/zomeck/visionTouchSurfaceLib">View On <strong>GitHub</strong></a></li>
  </ul>       
- <br>
- <br>
- 
+
  This project was developed by <a href="https://github.com/dhood" target="_blank">Deanna Hood</a> and <a href="https://github.com/zomeck" target="_blank">Gerard Bahi</a> 
 
 <small>Hosted on GitHub Pages</small>
-
  */

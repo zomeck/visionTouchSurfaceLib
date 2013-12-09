@@ -7,7 +7,8 @@ class TappingManager : public GestureManager
 {
     KalmanFilteringSwipe kmMouse;
 
-    Point2i cMapped;
+    Point2i cMapped,prevCMapped;
+    float minXOffset, minYOffset;
 public:
     TappingManager();
 

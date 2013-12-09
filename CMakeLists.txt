@@ -6,7 +6,7 @@ include(FindPkgConfig)
 SET(${PROJECT_NAME} ${PROJECT_SOURCE_DIR})
 
 set( CMAKE_CXX_FLAGS_RELEASE "-O3" )
-
+include_directories(/usr/include/ni/)
 
 MESSAGE ( STATUS )
 MESSAGE ( STATUS "Building visionTouchSurface library:" )
@@ -30,6 +30,9 @@ INCLUDE_DIRECTORIES (
   "vts_sensors/include"
   "vts_utils/include"
 )
+
+#set to off, false,... to disable leap support in vts_sensors
+SET( USE_LEAP_SUPPORT on)
 
 FILE (GLOB HEADER_FILES include/*.h include/*.inl)
 FILE (GLOB_RECURSE SOURCE_FILES src/*.cpp include/*.h include/*.inl)

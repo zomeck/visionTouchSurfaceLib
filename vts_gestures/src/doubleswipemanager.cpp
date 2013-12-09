@@ -3,7 +3,7 @@
 DoubleSwipeManager::DoubleSwipeManager(): GestureManager()
 {
 
-    minDist=15;
+    minDist=20;
     //state=STATUS_INACTIVE;
 }
 
@@ -55,6 +55,9 @@ void DoubleSwipeManager::generateGestureData(FrameData &params)
 
 void DoubleSwipeManager::onStatusInit(FrameData &params)
 {
+
+    line( params.rgbDebug, Point2i( 1, 10 ), Point2i( params.rgbDebug.cols-1, 10 ),Scalar(0,255,0),4 );
+
     prevCentroidHand=centroidHand;
     prevCentroidHand2=centroidHand2;
     Point2i cursorCoordsKinect= (centroidHand2 + centroidHand);
@@ -78,6 +81,8 @@ void DoubleSwipeManager::onStatusInit(FrameData &params)
 
 void DoubleSwipeManager::onStatusActive(FrameData &params)
 {
+    line( params.rgbDebug, Point2i( 1, 10 ), Point2i( params.rgbDebug.cols-1, 10 ),Scalar(0,255,0),4 );
+
     if( !gestureDetected ){
         centroidHand=prevCentroidHand;
         centroidHand2=prevCentroidHand2;
@@ -137,6 +142,8 @@ void DoubleSwipeManager::onStatusActive(FrameData &params)
 
 void DoubleSwipeManager::onStatusFinish(FrameData &params)
 {
+    line( params.rgbDebug, Point2i( 1, 10 ), Point2i( params.rgbDebug.cols-1, 10 ),Scalar(0,255,0),4 );
+
     Point2i cursorCoordsKinect= (prevCentroidHand2 + prevCentroidHand);
     cursorCoordsKinect.x/=2;
     cursorCoordsKinect.y/=2;

@@ -16,6 +16,8 @@ protected:
     string fileHeader;
     int offset;
     long counter;
+    int waitingFpN;
+    int fpNMax;
 public:
     StoreHandMask();
 

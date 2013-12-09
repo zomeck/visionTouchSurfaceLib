@@ -23,9 +23,11 @@ public:
     vector<Hand> *hands;
     ProjectiveMapping * kinect2screen;
     LeapMapping * leap2screen;
-    Point3i matchPointable;
+    //Point3i matchPointable;
     Mat depthMap;
     Mat rgbDebug;
+    Mat handsMaskRaw;
+    Mat fingersMaskRaw;
 };
 
 #endif // FRAMEDATA_H

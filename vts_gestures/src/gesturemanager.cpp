@@ -75,6 +75,12 @@ void GestureManager::setIOManager( IOEventManager *eventManager)
 
 }
 
+IOEventManager *GestureManager::getIOManager()
+{
+    return iomanager;
+
+}
+
 bool GestureManager::isActive() const
 {
     return state==STATUS_ACTIVE;

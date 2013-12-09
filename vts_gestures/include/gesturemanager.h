@@ -132,6 +132,8 @@ public:
      */
     virtual void setIOManager(IOEventManager *eventManager );
 
+    virtual IOEventManager * getIOManager();
+
     virtual bool isActive() const;
 
     int getCounterInitMax() const;

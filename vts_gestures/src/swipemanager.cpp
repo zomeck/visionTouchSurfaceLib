@@ -30,6 +30,7 @@ void SwipeManager::generateGestureData(FrameData &params)
 
 void SwipeManager::onStatusInit(FrameData &params)
 {
+    line( params.rgbDebug, Point2i( 1, 6 ), Point2i( params.rgbDebug.cols-1, 6 ),Scalar(255,255,255),4 );
 
     kmSwipe.initialiseGesture(centroidHand,1);
 
@@ -51,6 +52,8 @@ void SwipeManager::onStatusInit(FrameData &params)
 
 void SwipeManager::onStatusActive(FrameData &params)
 {
+    line( params.rgbDebug, Point2i( 1, 6 ), Point2i( params.rgbDebug.cols-1, 6 ),Scalar(255,255,255),4 );
+
     Point2i kmCentroidHand;
     if( gestureDetected ){
         kmCentroidHand=kmSwipe.predictUpdateUsingObs( centroidHand );
@@ -99,6 +102,8 @@ void SwipeManager::onStatusActive(FrameData &params)
 
 void SwipeManager::onStatusFinish(FrameData &params)
 {
+
+    line( params.rgbDebug, Point2i( 1, 6 ), Point2i( params.rgbDebug.cols-1, 6 ),Scalar(255,255,255),4 );
 
     EventData eventParam;
     eventParam.frameData=&params;

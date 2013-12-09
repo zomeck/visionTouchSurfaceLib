@@ -7,41 +7,50 @@ StoreHandMask::StoreHandMask():IOEventManager()
     fileHeader.assign("hand");
     offset=10;
     counter=0;
+    fpNMax=10;
+    waitingFpN=fpNMax;
 }
 
 
 void StoreHandMask::storeHands(EventData &param)
 {
+    if( waitingFpN>0 ){
+        waitingFpN--;
+    }else{
 
-    //boost::filesystem::path dir(folder);
-    //boost::filesystem::create_directory(dir);
-    string command("mkdir -p ./");
-    command.append( folder );
-    system( command.c_str() );
+        waitingFpN=fpNMax;
 
-
-    vector< vector<Point> > contourHandsVect;
-    vector<Rect> bboxVect;
-    for( int i=0; i<param.frameData->hands->size();i++ ){
-        vector<Point> tmp=param.frameData->hands->at(0).contour;
-        contourHandsVect.push_back( tmp );
-        Rect bbox=boundingRect( param.frameData->hands->at(0).contour );
-        bboxVect.push_back( bbox );
-
-    }
+        //boost::filesystem::path dir(folder);
+        //boost::filesystem::create_directory(dir);
+        string command("mkdir -p ./");
+        command.append( folder );
+        system( command.c_str() );
 
 
-    for( int i=0; i<contourHandsVect.size();i++ ){
-        Mat tmp=Mat::zeros( param.frameData->depthMap.size(),CV_THRESH_BINARY);
-        //cout<< param.frameData->depthMap.size()<<endl;
-        drawContours( tmp,contourHandsVect, i,Scalar(255,255,255),CV_FILLED );
+        vector< vector<Point> > contourHandsVect;
+        vector<Rect> bboxVect;
+        for( int i=0; i<param.frameData->hands->size();i++ ){
+            vector<Point> tmp=param.frameData->hands->at(0).contour;
+            contourHandsVect.push_back( tmp );
+            Rect bbox=boundingRect( param.frameData->hands->at(0).contour );
+            bboxVect.push_back( bbox );
+
+        }
 
 
-        stringstream frameName;
+        for( int i=0; i<contourHandsVect.size();i++ ){
+            Mat tmp=Mat::zeros( param.frameData->depthMap.size(),CV_THRESH_BINARY);
+            //cout<< param.frameData->depthMap.size()<<endl;
+            drawContours( tmp,contourHandsVect, i,Scalar(255,255,255),CV_FILLED );
 
-        frameName<<folder<<"/"<<fileHeader<<std::setfill('0')<<std::setw(offset)<<counter<<".jpg";
-        counter++;
-        imwrite( frameName.str(), tmp );
+
+            stringstream frameName;
+
+            frameName<<folder<<"/"<<fileHeader<<std::setfill('0')<<std::setw(offset)<<counter<<".jpg";
+            counter++;
+            imwrite( frameName.str(), tmp );
+
+        }
 
     }
 }

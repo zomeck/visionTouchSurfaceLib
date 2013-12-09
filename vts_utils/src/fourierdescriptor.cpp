@@ -104,7 +104,7 @@ int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, do
     }
 
     if(numFDdict!=numFD){
-        cerr<<"Fourier descriptor dictionary uses a different length."<<endl;
+        //cerr<<"Fourier descriptor dictionary uses a different length."<<endl;
     }
 
     //compare with dictionary
@@ -140,7 +140,8 @@ int FourierDescriptor::findMatchInDictionary(Mat &testFD, string &distMetric, do
                 //Mat diff=FDtoTest-(*FDdict);
                 Mat diffAbs, diffAbsScale;
                 diffAbs = abs(diff);
-                Mat scale = 1/(abs(FDtoTest)+abs((*FDdict)));
+                //Mat scale = 1/(abs(FDtoTest)+abs((*FDdict)));
+                Mat scale = 1/( abs(FDtoTest) + abs(subDict) );
                 multiply(diffAbs,scale,diffAbsScale);
                 reduce(diffAbsScale,dist,1, CV_REDUCE_SUM);
             }

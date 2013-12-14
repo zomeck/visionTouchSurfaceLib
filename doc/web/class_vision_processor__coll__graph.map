@@ -1,0 +1,5 @@
+<map id="VisionProcessor" name="VisionProcessor">
+<area shape="rect" id="node2" href="$class_fourier_descriptor.html" title="The FourierDescriptor class computes the fourier descriptor of a hand and matches it with a class of ..." alt="" coords="5,5,128,35"/>
+<area shape="rect" id="node4" href="$class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig..." alt="" coords="152,5,280,35"/>
+<area shape="rect" id="node6" href="$class_kinect_handler.html" title="The KinectHandler class is an interface to comunicate with the kinect SDK." alt="" coords="304,5,408,35"/>
+</map>

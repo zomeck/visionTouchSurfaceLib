@@ -100,15 +100,13 @@ Inheritance diagram for IOEventManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_o_event_manager__inherit__graph.png" border="0" usemap="#_i_o_event_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_i_o_event_manager_inherit__map" id="_i_o_event_manager_inherit__map">
-<area shape="rect" id="node3" href="class_alt_tab_event_manager.html" title="AltTabEventManager" alt="" coords="5,83,149,112"/><area shape="rect" id="node5" href="class_scroll_up_down_manager.html" title="ScrollUpDownManager" alt="" coords="173,83,328,112"/><area shape="rect" id="node7" href="class_single_click_hold_event_manager.html" title="SingleClickHoldEventManager" alt="" coords="352,83,549,112"/><area shape="rect" id="node9" href="class_store_hand_mask.html" title="StoreHandMask" alt="" coords="573,83,688,112"/></map>
+<area shape="rect" id="node3" href="class_alt_tab_event_manager.html" title="The AltTabEventManager class inherits from IOEventManager to implement Alt+tab key shortcut using Xli..." alt="" coords="5,83,149,112"/><area shape="rect" id="node5" href="class_scroll_up_down_manager.html" title="The ScrollUpDownManager class inherits from IOEventManager to implement a scrolling up and down event..." alt="" coords="173,83,328,112"/><area shape="rect" id="node7" href="class_single_click_hold_event_manager.html" title="The SingleClickHoldEventManager class inherits from IOEventManager to implement a button click and ho..." alt="" coords="352,83,549,112"/><area shape="rect" id="node9" href="class_store_hand_mask.html" title="The StoreHandMask class inherits from IOEventManager to implement an event that stores all hands foun..." alt="" coords="573,83,688,112"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c52076287bcc923d9ab47a3b835231f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_o_event_manager.html#a2c52076287bcc923d9ab47a3b835231f">IOEventManager</a> ()</td></tr>
 <tr class="separator:a2c52076287bcc923d9ab47a3b835231f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fcc7331c51e2f54580bf3593b884a25"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_o_event_manager.html#a1fcc7331c51e2f54580bf3593b884a25">set</a> (const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;param)=0</td></tr>
-<tr class="separator:a1fcc7331c51e2f54580bf3593b884a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb8d80450df0cb5808b2fd287edde617"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_o_event_manager.html#aeb8d80450df0cb5808b2fd287edde617">initData</a> ()=0</td></tr>
 <tr class="memdesc:aeb8d80450df0cb5808b2fd287edde617"><td class="mdescLeft">&#160;</td><td class="mdescRight">initData This function initializes the atributes needed for using the event later on  <a href="#aeb8d80450df0cb5808b2fd287edde617">More...</a><br/></td></tr>
 <tr class="separator:aeb8d80450df0cb5808b2fd287edde617"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +177,7 @@ Protected Attributes</h2></td></tr>
 <p>This function should not be called again until <a class="el" href="class_i_o_event_manager.html#a7cb5123f16a5ce7d8586f2ea60527692" title="gestureInitialize This function is called when the event needs to be started">IOEventManager::gestureInitialize</a> has been called.</p>
 <p>In the example of doing a mouse click and drag this function would unclick the button. In the example of recording a video this function should close the file descriptor. </p>
 
-<p>Implemented in <a class="el" href="class_store_hand_mask.html#a666a1fa92c3d9f08d5415bd5c398ccf6">StoreHandMask</a>, <a class="el" href="class_scroll_up_down_manager.html#a038d8fb623633bc8d67414189c924e7f">ScrollUpDownManager</a>, <a class="el" href="class_single_click_hold_event_manager.html#af7f0d22d8bbb12cd0f88e31e6fe857fe">SingleClickHoldEventManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#abd9ba3b6a983711348cea9f23810a7b8">AltTabEventManager</a>.</p>
+<p>Implemented in <a class="el" href="class_store_hand_mask.html#a666a1fa92c3d9f08d5415bd5c398ccf6">StoreHandMask</a>, <a class="el" href="class_single_click_hold_event_manager.html#af7f0d22d8bbb12cd0f88e31e6fe857fe">SingleClickHoldEventManager</a>, <a class="el" href="class_scroll_up_down_manager.html#a038d8fb623633bc8d67414189c924e7f">ScrollUpDownManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#abd9ba3b6a983711348cea9f23810a7b8">AltTabEventManager</a>.</p>
 
 </div>
 </div>
@@ -215,7 +213,7 @@ Protected Attributes</h2></td></tr>
 <p>In the example of doing a mouse click and drag this would be the function when the button is clicked. In the example of recording a video the file descriptor should be created in this function.</p>
 <p>This function should not be called again until <a class="el" href="class_i_o_event_manager.html#a143e912b3918bc7a27a3b47d7155896e" title="gestureFinalize This function is called when the event needs to be finalized">IOEventManager::gestureFinalize</a> has been called. </p>
 
-<p>Implemented in <a class="el" href="class_store_hand_mask.html#a5fb40ba8f0bce09b9563e412674c890b">StoreHandMask</a>, <a class="el" href="class_scroll_up_down_manager.html#a58dcfb103f08edbb6cfa091a7ae23ca0">ScrollUpDownManager</a>, <a class="el" href="class_single_click_hold_event_manager.html#aa5a0132c711a3dc82e2edbd815984bca">SingleClickHoldEventManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#af50dcf0838e346090190e12e81f40206">AltTabEventManager</a>.</p>
+<p>Implemented in <a class="el" href="class_store_hand_mask.html#a5fb40ba8f0bce09b9563e412674c890b">StoreHandMask</a>, <a class="el" href="class_single_click_hold_event_manager.html#aa5a0132c711a3dc82e2edbd815984bca">SingleClickHoldEventManager</a>, <a class="el" href="class_scroll_up_down_manager.html#a58dcfb103f08edbb6cfa091a7ae23ca0">ScrollUpDownManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#af50dcf0838e346090190e12e81f40206">AltTabEventManager</a>.</p>
 
 </div>
 </div>
@@ -250,7 +248,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <p>This function could be called several times. In the example of doing a mouse click and drag this would be the function that updates the mouse position. In the exmample of recording a video each call to this function would store a frame. </p>
 
-<p>Implemented in <a class="el" href="class_store_hand_mask.html#a6a23974b8b8b40de481d76042a0b0ac7">StoreHandMask</a>, <a class="el" href="class_scroll_up_down_manager.html#af160ab8fa9cb3bb9f4f24c4cc4a44a5b">ScrollUpDownManager</a>, <a class="el" href="class_single_click_hold_event_manager.html#a6edd44aadec8f75269dfb33ab1b9ffea">SingleClickHoldEventManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#afc66787ef2fb6fa6af059f63ae4ca756">AltTabEventManager</a>.</p>
+<p>Implemented in <a class="el" href="class_store_hand_mask.html#a6a23974b8b8b40de481d76042a0b0ac7">StoreHandMask</a>, <a class="el" href="class_single_click_hold_event_manager.html#a6edd44aadec8f75269dfb33ab1b9ffea">SingleClickHoldEventManager</a>, <a class="el" href="class_scroll_up_down_manager.html#af160ab8fa9cb3bb9f4f24c4cc4a44a5b">ScrollUpDownManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#afc66787ef2fb6fa6af059f63ae4ca756">AltTabEventManager</a>.</p>
 
 </div>
 </div>
@@ -277,33 +275,7 @@ Protected Attributes</h2></td></tr>
 
 <p>initData This function initializes the atributes needed for using the event later on </p>
 
-<p>Implemented in <a class="el" href="class_store_hand_mask.html#a5db1adb14ac2c859ce7d2a55922be901">StoreHandMask</a>, <a class="el" href="class_scroll_up_down_manager.html#a882b2cea560cfe9fb31caf410d6a5845">ScrollUpDownManager</a>, <a class="el" href="class_single_click_hold_event_manager.html#a40c15e8b960ff1418a9c5f812350aa2a">SingleClickHoldEventManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc">AltTabEventManager</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1fcc7331c51e2f54580bf3593b884a25"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void IOEventManager::set </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>param</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_store_hand_mask.html#af8b1184613065c1f6471a367d58ce00e">StoreHandMask</a>, <a class="el" href="class_scroll_up_down_manager.html#ada76cacd5896af0dd9687c63b479a295">ScrollUpDownManager</a>, <a class="el" href="class_single_click_hold_event_manager.html#a66724b3e249ead0e937217197495fbfc">SingleClickHoldEventManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#ab3615ddd4bbdb4df9a7a31790d424376">AltTabEventManager</a>.</p>
+<p>Implemented in <a class="el" href="class_store_hand_mask.html#a5db1adb14ac2c859ce7d2a55922be901">StoreHandMask</a>, <a class="el" href="class_single_click_hold_event_manager.html#a40c15e8b960ff1418a9c5f812350aa2a">SingleClickHoldEventManager</a>, <a class="el" href="class_scroll_up_down_manager.html#a882b2cea560cfe9fb31caf410d6a5845">ScrollUpDownManager</a>, and <a class="el" href="class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc">AltTabEventManager</a>.</p>
 
 </div>
 </div>
@@ -335,7 +307,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

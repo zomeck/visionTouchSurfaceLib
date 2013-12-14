@@ -91,6 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_single_click_hold_event_manager.html" title="The SingleClickHoldEventManager class inherits from IOEventManager to implement a button click and ho...">SingleClickHoldEventManager</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement a button click and hold using Xlib.  
+ <a href="class_single_click_hold_event_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="singleclickholdeventmanager_8h_source.html">singleclickholdeventmanager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SingleClickHoldEventManager:</div>
@@ -113,8 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af6b5fc8a83bfc96a80b216cadb1363f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a736257c91cf7ba69e4aa7dc55918dbb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_click_hold_event_manager.html#a736257c91cf7ba69e4aa7dc55918dbb6">~SingleClickHoldEventManager</a> ()</td></tr>
 <tr class="separator:a736257c91cf7ba69e4aa7dc55918dbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66724b3e249ead0e937217197495fbfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_click_hold_event_manager.html#a66724b3e249ead0e937217197495fbfc">set</a> (const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;param)</td></tr>
-<tr class="separator:a66724b3e249ead0e937217197495fbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc9a4b33696cb4496578ef47af7cf654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_click_hold_event_manager.html#acc9a4b33696cb4496578ef47af7cf654">setButton</a> (int pbutton)</td></tr>
 <tr class="separator:acc9a4b33696cb4496578ef47af7cf654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c15e8b960ff1418a9c5f812350aa2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_click_hold_event_manager.html#a40c15e8b960ff1418a9c5f812350aa2a">initData</a> ()</td></tr>
@@ -143,7 +144,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_o_event_manager.html#aabb7ea3bb0e61aa81516703213de90aa">hasBeenInit</a></td></tr>
 <tr class="separator:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_single_click_hold_event_manager.html" title="The SingleClickHoldEventManager class inherits from IOEventManager to implement a button click and ho...">SingleClickHoldEventManager</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement a button click and hold using Xlib. </p>
+<p>The class will simulate a mouse click of the button set as parameter, the default button is the left button (button 1 in Xlib). The class will start clicking when calling gestureInitialize and stop the clicking when gestureFinalize. Call gestureInProgressUpdate will update the mouse position. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af6b5fc8a83bfc96a80b216cadb1363f1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -309,32 +313,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a66724b3e249ead0e937217197495fbfc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SingleClickHoldEventManager::set </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>param</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_i_o_event_manager.html#a1fcc7331c51e2f54580bf3593b884a25">IOEventManager</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="acc9a4b33696cb4496578ef47af7cf654"></a>
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +377,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

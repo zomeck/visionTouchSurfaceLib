@@ -85,11 +85,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_kinect_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">KinectHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_kinect_handler.html" title="The KinectHandler class is an interface to comunicate with the kinect SDK.">KinectHandler</a> class is an interface to comunicate with the kinect SDK.  
+ <a href="class_kinect_handler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="kinecthandler_8h_source.html">kinecthandler.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -100,14 +104,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8e213de1d950a19f99effbab11e1a8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#aa8e213de1d950a19f99effbab11e1a8b">~KinectHandler</a> ()</td></tr>
 <tr class="separator:aa8e213de1d950a19f99effbab11e1a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbde45f8c027f98354c46811faaab75"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a2bbde45f8c027f98354c46811faaab75">init</a> ()</td></tr>
+<tr class="memdesc:a2bbde45f8c027f98354c46811faaab75"><td class="mdescLeft">&#160;</td><td class="mdescRight">init creates the conection with the device  <a href="#a2bbde45f8c027f98354c46811faaab75">More...</a><br/></td></tr>
 <tr class="separator:a2bbde45f8c027f98354c46811faaab75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4063e36eb9fd79873cc1dd0da926b9a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a4063e36eb9fd79873cc1dd0da926b9a8">waitFrame</a> ()</td></tr>
+<tr class="memdesc:a4063e36eb9fd79873cc1dd0da926b9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">waitFrame waits until there is a frame avaliable to retrieve  <a href="#a4063e36eb9fd79873cc1dd0da926b9a8">More...</a><br/></td></tr>
 <tr class="separator:a4063e36eb9fd79873cc1dd0da926b9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a3b7245ee21f1570c063d6984a8f5de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a3a3b7245ee21f1570c063d6984a8f5de">getDepthMap16</a> (Mat &amp;depthMap)</td></tr>
+<tr class="memdesc:a3a3b7245ee21f1570c063d6984a8f5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">getDepthMap16 retrieves the depthmap of the current frame 16 precision  <a href="#a3a3b7245ee21f1570c063d6984a8f5de">More...</a><br/></td></tr>
 <tr class="separator:a3a3b7245ee21f1570c063d6984a8f5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1c7f1dee2097f0db20a7287b9315d93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#ab1c7f1dee2097f0db20a7287b9315d93">getDepthMap08</a> (Mat &amp;depthMap)</td></tr>
+<tr class="memdesc:ab1c7f1dee2097f0db20a7287b9315d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">getDepthMap16 retrieves the depthmap of the current frame 8 precision  <a href="#ab1c7f1dee2097f0db20a7287b9315d93">More...</a><br/></td></tr>
 <tr class="separator:ab1c7f1dee2097f0db20a7287b9315d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09676d8936a38822e0f65c517ab9d2da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a09676d8936a38822e0f65c517ab9d2da">getImage</a> (Mat &amp;image)</td></tr>
+<tr class="memdesc:a09676d8936a38822e0f65c517ab9d2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">getImage retrieves the RGB image from the current frame  <a href="#a09676d8936a38822e0f65c517ab9d2da">More...</a><br/></td></tr>
 <tr class="separator:a09676d8936a38822e0f65c517ab9d2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50546c6d006fb49c15573f1298cd9713"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a50546c6d006fb49c15573f1298cd9713">getResWidth</a> () const </td></tr>
 <tr class="separator:a50546c6d006fb49c15573f1298cd9713"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,9 +130,36 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cf2a6ae578e3a41ab6fdd25bb8674c9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a6cf2a6ae578e3a41ab6fdd25bb8674c9">depthMapCorrection</a> (Mat &amp;input, Mat &amp;output, bool interPolate=false)</td></tr>
+<tr class="memdesc:a6cf2a6ae578e3a41ab6fdd25bb8674c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">depthMapCorrection uses opencv inpaint to correct the holes from the depthmap  <a href="#a6cf2a6ae578e3a41ab6fdd25bb8674c9">More...</a><br/></td></tr>
 <tr class="separator:a6cf2a6ae578e3a41ab6fdd25bb8674c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:afb0fd048b3ebed3f0367640b87ee5e6e"><td class="memItemLeft" align="right" valign="top">Context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#afb0fd048b3ebed3f0367640b87ee5e6e">context</a></td></tr>
+<tr class="separator:afb0fd048b3ebed3f0367640b87ee5e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5225a2dc31391f011b396dfe97629a9"><td class="memItemLeft" align="right" valign="top">ImageGenerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#ac5225a2dc31391f011b396dfe97629a9">g_image</a></td></tr>
+<tr class="separator:ac5225a2dc31391f011b396dfe97629a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3e86de3e5e259cbd60f6d8657d52b3"><td class="memItemLeft" align="right" valign="top">DepthGenerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a6f3e86de3e5e259cbd60f6d8657d52b3">d_image</a></td></tr>
+<tr class="separator:a6f3e86de3e5e259cbd60f6d8657d52b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe405b3b344848e9dc5bdd65a34ffe83"><td class="memItemLeft" align="right" valign="top">ImageMetaData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#afe405b3b344848e9dc5bdd65a34ffe83">g_imageMD</a></td></tr>
+<tr class="separator:afe405b3b344848e9dc5bdd65a34ffe83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6a9fad3c5e9b84e882fc7a80f87643"><td class="memItemLeft" align="right" valign="top">EnumerationErrors&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a0e6a9fad3c5e9b84e882fc7a80f87643">errors</a></td></tr>
+<tr class="separator:a0e6a9fad3c5e9b84e882fc7a80f87643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8f7abc06541b351d7c6abd9ef39440"><td class="memItemLeft" align="right" valign="top">XnStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#acc8f7abc06541b351d7c6abd9ef39440">nRetVal</a></td></tr>
+<tr class="separator:acc8f7abc06541b351d7c6abd9ef39440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3374d5e641ea18a0b0c63ab9833bbfcd"><td class="memItemLeft" align="right" valign="top">const XnDepthPixel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a3374d5e641ea18a0b0c63ab9833bbfcd">pDepthMap</a></td></tr>
+<tr class="separator:a3374d5e641ea18a0b0c63ab9833bbfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b61760c73e8f3742518f5d13f4be6b1"><td class="memItemLeft" align="right" valign="top">const XnRGB24Pixel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a1b61760c73e8f3742518f5d13f4be6b1">pImage</a></td></tr>
+<tr class="separator:a1b61760c73e8f3742518f5d13f4be6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548e193c18026d21921266577af6ec44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a548e193c18026d21921266577af6ec44">ResWidth</a></td></tr>
+<tr class="separator:a548e193c18026d21921266577af6ec44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2db15abf5f52e29311f465c99a631d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinect_handler.html#a0c2db15abf5f52e29311f465c99a631d">ResHeight</a></td></tr>
+<tr class="separator:a0c2db15abf5f52e29311f465c99a631d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_kinect_handler.html" title="The KinectHandler class is an interface to comunicate with the kinect SDK.">KinectHandler</a> class is an interface to comunicate with the kinect SDK. </p>
+<p>The aim of this class is being able to make the system more modular this class is the only one needed to be modified when there are changes on the kinect SDK </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3af2bd2b17a3ca2688272de40f2bbb2a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -193,6 +229,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>depthMapCorrection uses opencv inpaint to correct the holes from the depthmap </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>is an opencv Mat of type CV_16UC1 depthmap with holes to be corrected </td></tr>
+    <tr><td class="paramname">output</td><td>is an opencv Mat of type CV_8UC1 depthmap with corrected holes </td></tr>
+    <tr><td class="paramname">interPolate</td><td>if true the computing is interpolated for faster performance </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ab1c7f1dee2097f0db20a7287b9315d93"></a>
@@ -216,6 +262,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>getDepthMap16 retrieves the depthmap of the current frame 8 precision </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depthMap</td><td>i/o variable that returns the depthmap using a opencv Mat of type CV_8UC1 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -241,6 +295,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>getDepthMap16 retrieves the depthmap of the current frame 16 precision </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depthMap</td><td>i/o variable that returns the depthmap using a opencv Mat of type CV_16UC1 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a09676d8936a38822e0f65c517ab9d2da"></a>
@@ -264,6 +326,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>getImage retrieves the RGB image from the current frame </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>i/o variable that returns the RGB image using a opencv Mat of type CV_8UC3 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -317,6 +387,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>init creates the conection with the device </p>
 
 </div>
 </div>
@@ -373,6 +445,209 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>waitFrame waits until there is a frame avaliable to retrieve </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="afb0fd048b3ebed3f0367640b87ee5e6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Context KinectHandler::context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f3e86de3e5e259cbd60f6d8657d52b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DepthGenerator KinectHandler::d_image</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e6a9fad3c5e9b84e882fc7a80f87643"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnumerationErrors KinectHandler::errors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac5225a2dc31391f011b396dfe97629a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageGenerator KinectHandler::g_image</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe405b3b344848e9dc5bdd65a34ffe83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageMetaData KinectHandler::g_imageMD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc8f7abc06541b351d7c6abd9ef39440"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XnStatus KinectHandler::nRetVal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3374d5e641ea18a0b0c63ab9833bbfcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const XnDepthPixel* KinectHandler::pDepthMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b61760c73e8f3742518f5d13f4be6b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const XnRGB24Pixel* KinectHandler::pImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c2db15abf5f52e29311f465c99a631d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KinectHandler::ResHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a548e193c18026d21921266577af6ec44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KinectHandler::ResWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -382,7 +657,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

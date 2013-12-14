@@ -91,6 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_scroll_up_down_manager.html" title="The ScrollUpDownManager class inherits from IOEventManager to implement a scrolling up and down event...">ScrollUpDownManager</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement a scrolling up and down event using Xlib.  
+ <a href="class_scroll_up_down_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="scrollupdownmanager_8h_source.html">scrollupdownmanager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ScrollUpDownManager:</div>
@@ -113,8 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9f6570174a8601c541f0d06304335088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f6ab8aa0e6b0bd7d00df48bb96f684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scroll_up_down_manager.html#a96f6ab8aa0e6b0bd7d00df48bb96f684">~ScrollUpDownManager</a> ()</td></tr>
 <tr class="separator:a96f6ab8aa0e6b0bd7d00df48bb96f684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada76cacd5896af0dd9687c63b479a295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scroll_up_down_manager.html#ada76cacd5896af0dd9687c63b479a295">set</a> (const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;param)</td></tr>
-<tr class="separator:ada76cacd5896af0dd9687c63b479a295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882b2cea560cfe9fb31caf410d6a5845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scroll_up_down_manager.html#a882b2cea560cfe9fb31caf410d6a5845">initData</a> ()</td></tr>
 <tr class="memdesc:a882b2cea560cfe9fb31caf410d6a5845"><td class="mdescLeft">&#160;</td><td class="mdescRight">initData This function initializes the atributes needed for using the event later on  <a href="#a882b2cea560cfe9fb31caf410d6a5845">More...</a><br/></td></tr>
 <tr class="separator:a882b2cea560cfe9fb31caf410d6a5845"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +140,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_o_event_manager.html#aabb7ea3bb0e61aa81516703213de90aa">hasBeenInit</a></td></tr>
 <tr class="separator:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_scroll_up_down_manager.html" title="The ScrollUpDownManager class inherits from IOEventManager to implement a scrolling up and down event...">ScrollUpDownManager</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement a scrolling up and down event using Xlib. </p>
+<p>This class will simulate scrolling up(wheel up - button 4 of Xlib) when offset values are positive and scrolling down(wheel down -button 5 of Xlib) when offset values are negative. When offset is 0 no action is taken. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9f6570174a8601c541f0d06304335088"></a>
 <div class="memitem">
 <div class="memproto">
@@ -305,32 +309,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ada76cacd5896af0dd9687c63b479a295"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ScrollUpDownManager::set </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>param</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_i_o_event_manager.html#a1fcc7331c51e2f54580bf3593b884a25">IOEventManager</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a74a99c33bd1d60a75ac9ef46a65f0299"></a>
 <div class="memitem">
@@ -359,7 +337,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

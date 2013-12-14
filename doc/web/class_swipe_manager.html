@@ -91,6 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_swipe_manager.html" title="The SwipeManager class inherits from GestureManager to implement a hand swiping gesture.">SwipeManager</a> class inherits from <a class="el" href="class_gesture_manager.html" title="The GestureManager class is a pure abstract class that provides an interface to create any gesture an...">GestureManager</a> to implement a hand swiping gesture.  
+ <a href="class_swipe_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="swipemanager_8h_source.html">swipemanager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SwipeManager:</div>
@@ -104,7 +107,7 @@ Collaboration diagram for SwipeManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_swipe_manager__coll__graph.png" border="0" usemap="#_swipe_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_swipe_manager_coll__map" id="_swipe_manager_coll__map">
-<area shape="rect" id="node2" href="class_gesture_manager.html" title="The GestureManager class is a pure abstract class that provides an interface to create any gesture an..." alt="" coords="7,101,124,131"/><area shape="rect" id="node4" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp..." alt="" coords="5,5,125,35"/><area shape="rect" id="node6" href="class_kalman_filtering_swipe.html" title="KalmanFilteringSwipe" alt="" coords="148,101,295,131"/></map>
+<area shape="rect" id="node2" href="class_gesture_manager.html" title="The GestureManager class is a pure abstract class that provides an interface to create any gesture an..." alt="" coords="7,101,124,131"/><area shape="rect" id="node4" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp..." alt="" coords="5,5,125,35"/><area shape="rect" id="node6" href="class_kalman_filtering_swipe.html" title="The KalmanFilteringSwipe class is an wraper to opencv KalmanFilter class." alt="" coords="148,101,295,131"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -112,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86326ac0271eef256d12854fb445b1a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swipe_manager.html#a86326ac0271eef256d12854fb445b1a9">SwipeManager</a> ()</td></tr>
 <tr class="separator:a86326ac0271eef256d12854fb445b1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac524d59d0a1fb1c575db4115c43faf3c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swipe_manager.html#ac524d59d0a1fb1c575db4115c43faf3c">isGestureDetected</a> (<a class="el" href="class_frame_data.html">FrameData</a> &amp;params)</td></tr>
-<tr class="memdesc:ac524d59d0a1fb1c575db4115c43faf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">isGestureDetected determines if the gesture is detected with the given data  <a href="#ac524d59d0a1fb1c575db4115c43faf3c">More...</a><br/></td></tr>
+<tr class="memdesc:ac524d59d0a1fb1c575db4115c43faf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">isGestureDetected determines whether the gesutre has been detected or not  <a href="#ac524d59d0a1fb1c575db4115c43faf3c">More...</a><br/></td></tr>
 <tr class="separator:ac524d59d0a1fb1c575db4115c43faf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2395f2a28141e60aa0660e6aa98a9f14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swipe_manager.html#a2395f2a28141e60aa0660e6aa98a9f14">generateGestureData</a> (<a class="el" href="class_frame_data.html">FrameData</a> &amp;params)</td></tr>
 <tr class="memdesc:a2395f2a28141e60aa0660e6aa98a9f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">generateGestureData This function generates the data needed for the gesture manager  <a href="#a2395f2a28141e60aa0660e6aa98a9f14">More...</a><br/></td></tr>
@@ -140,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa45d880b6f77684d70c4246e9375ae4c inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#aa45d880b6f77684d70c4246e9375ae4c">setIOManager</a> (<a class="el" href="class_i_o_event_manager.html">IOEventManager</a> *eventManager)</td></tr>
 <tr class="memdesc:aa45d880b6f77684d70c4246e9375ae4c inherit pub_methods_class_gesture_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">setIOManager This function changes the event manager associated with this class  <a href="#aa45d880b6f77684d70c4246e9375ae4c">More...</a><br/></td></tr>
 <tr class="separator:aa45d880b6f77684d70c4246e9375ae4c inherit pub_methods_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2267d0a19c58aad8b2435af80d530d0b inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a2267d0a19c58aad8b2435af80d530d0b">getIOManager</a> ()</td></tr>
+<tr class="separator:a2267d0a19c58aad8b2435af80d530d0b inherit pub_methods_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e414e7840ebc76700fd76193b22ee3c inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a3e414e7840ebc76700fd76193b22ee3c">isActive</a> () const </td></tr>
 <tr class="separator:a3e414e7840ebc76700fd76193b22ee3c inherit pub_methods_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad328a552878f80a429de34eb53322280 inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#ad328a552878f80a429de34eb53322280">getCounterInitMax</a> () const </td></tr>
@@ -194,7 +199,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6b2de13be6b1feed8ec36fd87d0bdaad inherit pro_static_attribs_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a6b2de13be6b1feed8ec36fd87d0bdaad">STATUS_FINISH</a> =1</td></tr>
 <tr class="separator:a6b2de13be6b1feed8ec36fd87d0bdaad inherit pro_static_attribs_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_swipe_manager.html" title="The SwipeManager class inherits from GestureManager to implement a hand swiping gesture.">SwipeManager</a> class inherits from <a class="el" href="class_gesture_manager.html" title="The GestureManager class is a pure abstract class that provides an interface to create any gesture an...">GestureManager</a> to implement a hand swiping gesture. </p>
+<p>When the gesture is detected it provides the <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> the top center position of the hand as mouse position and the distance between the hand position in the current frame and the hand posistion from the previous frame </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a86326ac0271eef256d12854fb445b1a9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -268,14 +276,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>isGestureDetected determines if the gesture is detected with the given data </p>
+<p>isGestureDetected determines whether the gesutre has been detected or not </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>data of the frame needed for the gesture </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True when the gesture is detected </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if only one hand is detected with at least more than one fingertip or a palm </dd></dl>
 
 <p>Implements <a class="el" href="class_gesture_manager.html#ab394eac123e4313eed3f0d1bd142b305">GestureManager</a>.</p>
 
@@ -510,7 +518,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

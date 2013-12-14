@@ -7,6 +7,12 @@
 using namespace std;
 #include "ioeventmanager.h"
 #include <boost/filesystem.hpp>
+
+/**
+ * @brief The StoreHandMask class inherits from IOEventManager to implement an event that stores all hands found in a frame
+ *
+ This class will store binary images of the hand masks found in the current frame to the folder specified.
+ */
 class StoreHandMask : public IOEventManager
 {
 

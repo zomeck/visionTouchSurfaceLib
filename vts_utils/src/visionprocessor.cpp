@@ -107,6 +107,12 @@ void VisionProcessor::init(int wRes, int hRes)
     minExcentricity=0.35;
     maxCirc=2.5;
 
+
+    //hand parameters
+    maxDist2Class=0.4;//0.4
+    descriptorNum=15;//25
+    minHandExc=0.37;
+
     //screen corners params
     epsilon=6;
 
@@ -383,14 +389,7 @@ void VisionProcessor::processFrame(FrameData &frameData, double &processingDurat
     //vector< Mat > contourMaskVect;
     //std::string normUsed("1norm");
     std::string normUsed("1norm");
-    float maxDist2Class;
-    int descriptorNum;
 
-    maxDist2Class=0.4;//0.4
-    descriptorNum=15;//25
-
-    float minHandExc;
-    minHandExc=0.37;
 
     for( int i = 0; i< contours.size(); i++ )
     {
@@ -545,13 +544,6 @@ void VisionProcessor::processFrame(FrameData &frameData, double &processingDurat
 
             if( exc<=maxExcentricity && exc>=minExcentricity && areaF>=minAreaFinger && areaF<=maxAreaFinger && circ<maxCirc ){
 
-                //cout <<"Circ "<<circ<<endl;
-                //minExc=exc;
-                //minIdx=i;
-                /*
-                cout<<"Box "<<((float)std::min(bBoxf.boundingRect().width, bBoxf.boundingRect().height))<<" "
-                   <<((float)std::max(bBoxf.boundingRect().width,bBoxf.boundingRect().height))<<endl;
-                */
                 //cout <<"Excentricity "<<exc<<endl;
                 contoursFFiltered.push_back( contoursF.at(j) );
                 RotatedRect fBB=minAreaRect( contoursF.at(j) );
@@ -580,32 +572,6 @@ void VisionProcessor::processFrame(FrameData &frameData, double &processingDurat
         frameData.hands->at(i).foundPalm=foundPalm;
 
     }
-
-    //chance to get a pointable object
-    //bool foundMatch=false;
-    //Point3i matchPointable;
-    //matchPointable.x=-1;
-    //matchPointable.y=-1;
-    //matchPointable.z=-1;
-    /*
-    if(contoursHandFiltered.size()==1 && contoursFingersHands.at(0).size() == 1 && useLeap ){
-
-        Rect bboxF=boundingRect(contoursFingersHands.at(0).at(0) );
-
-        radiusUncertantyKinect=bboxF.width+400;
-
-        Point2i pointableCandidate;
-
-        pointableCandidate.x=bboxF.tl().x+bboxF.width/2;
-        pointableCandidate.y=bboxF.br().y;
-
-        kinect2screen.mapPoints( pointableCandidate, pointableCandidate);
-
-        foundMatch=leapHandler->findBestMatchOnCurrentFrame( pointableCandidate, radiusUncertantyKinect, leapMapping, matchPointable );
-
-    }
-    */
-
 
 
     time(&end);

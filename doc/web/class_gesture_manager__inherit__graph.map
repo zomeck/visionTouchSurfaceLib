@@ -1,6 +1,6 @@
 <map id="GestureManager" name="GestureManager">
-<area shape="rect" id="node3" href="$class_double_swipe_manager.html" title="DoubleSwipeManager" alt="" coords="5,83,155,112"/>
-<area shape="rect" id="node5" href="$class_monitor_hands_manager.html" title="MonitorHandsManager" alt="" coords="179,83,331,112"/>
-<area shape="rect" id="node7" href="$class_swipe_manager.html" title="SwipeManager" alt="" coords="355,83,461,112"/>
-<area shape="rect" id="node9" href="$class_tapping_manager.html" title="TappingManager" alt="" coords="485,83,603,112"/>
+<area shape="rect" id="node3" href="$class_double_swipe_manager.html" title="The DoubleSwipeManager class inherits from GestureManager to implement a double handed gesture..." alt="" coords="5,83,155,112"/>
+<area shape="rect" id="node5" href="$class_monitor_hands_manager.html" title="The MonitorHandsManager class inherits from GestureManager to implement a hand monitoring gesture..." alt="" coords="179,83,331,112"/>
+<area shape="rect" id="node7" href="$class_swipe_manager.html" title="The SwipeManager class inherits from GestureManager to implement a hand swiping gesture." alt="" coords="355,83,461,112"/>
+<area shape="rect" id="node9" href="$class_tapping_manager.html" title="The TappingManager class inherits from GestureManager to implement a tapping gesture." alt="" coords="485,83,603,112"/>
 </map>

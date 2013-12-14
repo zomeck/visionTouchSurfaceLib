@@ -110,18 +110,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//vector&lt; vector&lt; vector&lt; Point &gt; &gt; &gt; *contoursFingersHands;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//vector&lt; bool &gt; *foundPalmHands;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_frame_data.html#ae278f2311400f785287676a15c63e74e">   23</a></span>&#160;    vector&lt;Hand&gt; *<a class="code" href="class_frame_data.html#ae278f2311400f785287676a15c63e74e">hands</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_frame_data.html#a6f491aff6b8e2befbf2e00c04664616c">   24</a></span>&#160;    <a class="code" href="class_projective_mapping.html">ProjectiveMapping</a> * <a class="code" href="class_frame_data.html#a6f491aff6b8e2befbf2e00c04664616c">kinect2screen</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_frame_data.html#a6f491aff6b8e2befbf2e00c04664616c">   24</a></span>&#160;    <a class="code" href="class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig...">ProjectiveMapping</a> * <a class="code" href="class_frame_data.html#a6f491aff6b8e2befbf2e00c04664616c">kinect2screen</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_frame_data.html#a091882d25611b1b9a75ecd948f1e1e08">   25</a></span>&#160;    <a class="code" href="class_leap_mapping.html">LeapMapping</a> * <a class="code" href="class_frame_data.html#a091882d25611b1b9a75ecd948f1e1e08">leap2screen</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_frame_data.html#a2d67f8262f1fb11366459edbecf72b17">   26</a></span>&#160;    Point3i <a class="code" href="class_frame_data.html#a2d67f8262f1fb11366459edbecf72b17">matchPointable</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//Point3i matchPointable;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_frame_data.html#ace6d19f89b60d8775febb1731e059b1e">   27</a></span>&#160;    Mat <a class="code" href="class_frame_data.html#ace6d19f89b60d8775febb1731e059b1e">depthMap</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_frame_data.html#a4b65521e39265b51baa03d1945c60845">   28</a></span>&#160;    Mat <a class="code" href="class_frame_data.html#a4b65521e39265b51baa03d1945c60845">rgbDebug</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // FRAMEDATA_H</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_frame_data.html#afdd68d6226e02b688fca31098291a294">   29</a></span>&#160;    Mat <a class="code" href="class_frame_data.html#afdd68d6226e02b688fca31098291a294">handsMaskRaw</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_frame_data.html#aef0d0bbf96201dfa7cb3799bcd71887d">   30</a></span>&#160;    Mat <a class="code" href="class_frame_data.html#aef0d0bbf96201dfa7cb3799bcd71887d">fingersMaskRaw</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // FRAMEDATA_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

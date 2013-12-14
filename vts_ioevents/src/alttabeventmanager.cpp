@@ -13,10 +13,12 @@ AltTabEventManager::~AltTabEventManager()
     dpy=NULL;
 }
 
+/*
 void AltTabEventManager::set(const IOEventManager &param)
 {
 
 }
+*/
 
 void AltTabEventManager::initData()
 {

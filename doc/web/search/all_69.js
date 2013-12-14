@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['init',['init',['../class_kinect_handler.html#a2bbde45f8c027f98354c46811faaab75',1,'KinectHandler']]],
+  ['init',['init',['../class_kinect_handler.html#a2bbde45f8c027f98354c46811faaab75',1,'KinectHandler::init()'],['../class_vision_processor.html#affc907335abd960f248a9481a878bcad',1,'VisionProcessor::init()']]],
   ['initdata',['initData',['../class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc',1,'AltTabEventManager::initData()'],['../class_i_o_event_manager.html#aeb8d80450df0cb5808b2fd287edde617',1,'IOEventManager::initData()'],['../class_scroll_up_down_manager.html#a882b2cea560cfe9fb31caf410d6a5845',1,'ScrollUpDownManager::initData()'],['../class_single_click_hold_event_manager.html#a40c15e8b960ff1418a9c5f812350aa2a',1,'SingleClickHoldEventManager::initData()'],['../class_store_hand_mask.html#a5db1adb14ac2c859ce7d2a55922be901',1,'StoreHandMask::initData()']]],
   ['initialisegesture',['initialiseGesture',['../class_kalman_filtering_swipe.html#a0d3a57a101cd522b63aa04eba77b424b',1,'KalmanFilteringSwipe']]],
   ['ioeventmanager',['IOEventManager',['../class_i_o_event_manager.html',1,'IOEventManager'],['../class_i_o_event_manager.html#a2c52076287bcc923d9ab47a3b835231f',1,'IOEventManager::IOEventManager()']]],

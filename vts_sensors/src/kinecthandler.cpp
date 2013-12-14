@@ -124,6 +124,7 @@ void KinectHandler::getImage(Mat &image)
 
     cvtColor( image, image, CV_RGB2BGR );
 
+
 }
 
 void KinectHandler::depthMapCorrection(Mat &input, Mat &output,bool interPolate )

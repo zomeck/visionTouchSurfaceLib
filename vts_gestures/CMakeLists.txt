@@ -19,4 +19,4 @@ include_directories(../vts_ioevents/include)
 include_directories(../vts_utils/include)
 
 # Build library
-ADD_LIBRARY (${LIB_OUTPUT_NAME} SHARED ${SOURCE_FILES}) 
+ADD_LIBRARY (${LIB_OUTPUT_NAME} SHARED ${SOURCE_FILES})

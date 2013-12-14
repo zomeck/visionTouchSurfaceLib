@@ -13,6 +13,7 @@ ScrollUpDownManager::~ScrollUpDownManager()
     dpy=NULL;
 }
 
+/*
 void ScrollUpDownManager::set(const IOEventManager &param)
 {
     /*
@@ -20,9 +21,10 @@ void ScrollUpDownManager::set(const IOEventManager &param)
         XCloseDisplay (dpy);
     }
     dpy=param.dpy.;
-    */
+
 
 }
+*/
 
 void ScrollUpDownManager::initData()
 {

@@ -14,11 +14,12 @@ SingleClickHoldEventManager::~SingleClickHoldEventManager()
     dpy=NULL;
 }
 
+/*
 void SingleClickHoldEventManager::set(const IOEventManager &param)
 {
 
 }
-
+*/
 void SingleClickHoldEventManager::setButton(int pbutton)
 {
     if( pbutton>0 && pbutton<7 ){

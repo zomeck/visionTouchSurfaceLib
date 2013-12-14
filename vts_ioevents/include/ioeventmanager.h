@@ -16,7 +16,7 @@ protected:
 public:
     IOEventManager();
 
-    virtual void set( const IOEventManager & param ) = 0;
+    //virtual void set( const IOEventManager & param ) = 0;
 
     /**
      * @brief initData This function initializes the atributes needed for using the event later on

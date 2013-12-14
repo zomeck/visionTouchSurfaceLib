@@ -102,7 +102,7 @@ Inheritance diagram for GestureManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_gesture_manager__inherit__graph.png" border="0" usemap="#_gesture_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_gesture_manager_inherit__map" id="_gesture_manager_inherit__map">
-<area shape="rect" id="node3" href="class_double_swipe_manager.html" title="DoubleSwipeManager" alt="" coords="5,83,155,112"/><area shape="rect" id="node5" href="class_monitor_hands_manager.html" title="MonitorHandsManager" alt="" coords="179,83,331,112"/><area shape="rect" id="node7" href="class_swipe_manager.html" title="SwipeManager" alt="" coords="355,83,461,112"/><area shape="rect" id="node9" href="class_tapping_manager.html" title="TappingManager" alt="" coords="485,83,603,112"/></map>
+<area shape="rect" id="node3" href="class_double_swipe_manager.html" title="The DoubleSwipeManager class inherits from GestureManager to implement a double handed gesture..." alt="" coords="5,83,155,112"/><area shape="rect" id="node5" href="class_monitor_hands_manager.html" title="The MonitorHandsManager class inherits from GestureManager to implement a hand monitoring gesture..." alt="" coords="179,83,331,112"/><area shape="rect" id="node7" href="class_swipe_manager.html" title="The SwipeManager class inherits from GestureManager to implement a hand swiping gesture." alt="" coords="355,83,461,112"/><area shape="rect" id="node9" href="class_tapping_manager.html" title="The TappingManager class inherits from GestureManager to implement a tapping gesture." alt="" coords="485,83,603,112"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for GestureManager:</div>
@@ -142,6 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa45d880b6f77684d70c4246e9375ae4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#aa45d880b6f77684d70c4246e9375ae4c">setIOManager</a> (<a class="el" href="class_i_o_event_manager.html">IOEventManager</a> *eventManager)</td></tr>
 <tr class="memdesc:aa45d880b6f77684d70c4246e9375ae4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">setIOManager This function changes the event manager associated with this class  <a href="#aa45d880b6f77684d70c4246e9375ae4c">More...</a><br/></td></tr>
 <tr class="separator:aa45d880b6f77684d70c4246e9375ae4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2267d0a19c58aad8b2435af80d530d0b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a2267d0a19c58aad8b2435af80d530d0b">getIOManager</a> ()</td></tr>
+<tr class="separator:a2267d0a19c58aad8b2435af80d530d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e414e7840ebc76700fd76193b22ee3c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a3e414e7840ebc76700fd76193b22ee3c">isActive</a> () const </td></tr>
 <tr class="separator:a3e414e7840ebc76700fd76193b22ee3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad328a552878f80a429de34eb53322280"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#ad328a552878f80a429de34eb53322280">getCounterInitMax</a> () const </td></tr>
@@ -264,7 +266,7 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <p>This function is called every time that <a class="el" href="class_gesture_manager.html#a4440bfd95bfbb70df4db7f617b3a500c" title="updateStatus processes the data of the given frame">GestureManager::updateStatus</a> is called and <a class="el" href="class_gesture_manager.html#ab394eac123e4313eed3f0d1bd142b305" title="isGestureDetected determines if the gesture is detected with the given data">GestureManager::isGestureDetected</a> returns True </p>
 
-<p>Implemented in <a class="el" href="class_swipe_manager.html#a2395f2a28141e60aa0660e6aa98a9f14">SwipeManager</a>, <a class="el" href="class_double_swipe_manager.html#a760c5fa1e44514882bb911611a17a4b9">DoubleSwipeManager</a>, <a class="el" href="class_tapping_manager.html#a47f97d9cffef74a4d68903e4888eee17">TappingManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a90b83bca9999ce6f8ff79d23a29f7427">MonitorHandsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_swipe_manager.html#a2395f2a28141e60aa0660e6aa98a9f14">SwipeManager</a>, <a class="el" href="class_tapping_manager.html#a47f97d9cffef74a4d68903e4888eee17">TappingManager</a>, <a class="el" href="class_double_swipe_manager.html#a760c5fa1e44514882bb911611a17a4b9">DoubleSwipeManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a90b83bca9999ce6f8ff79d23a29f7427">MonitorHandsManager</a>.</p>
 
 </div>
 </div>
@@ -294,6 +296,29 @@ Static Protected Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2267d0a19c58aad8b2435af80d530d0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_o_event_manager.html">IOEventManager</a> * GestureManager::getIOManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -352,7 +377,7 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True when the gesture is detected </dd></dl>
 
-<p>Implemented in <a class="el" href="class_swipe_manager.html#ac524d59d0a1fb1c575db4115c43faf3c">SwipeManager</a>, <a class="el" href="class_double_swipe_manager.html#a5da7416edb2bb3b342a8643a515208ff">DoubleSwipeManager</a>, <a class="el" href="class_tapping_manager.html#af23cb1ac9f54b7fad9593c967835e2f3">TappingManager</a>, and <a class="el" href="class_monitor_hands_manager.html#abadad5b910b75d33c791981d699b7b27">MonitorHandsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_swipe_manager.html#ac524d59d0a1fb1c575db4115c43faf3c">SwipeManager</a>, <a class="el" href="class_tapping_manager.html#af23cb1ac9f54b7fad9593c967835e2f3">TappingManager</a>, <a class="el" href="class_double_swipe_manager.html#a5da7416edb2bb3b342a8643a515208ff">DoubleSwipeManager</a>, and <a class="el" href="class_monitor_hands_manager.html#abadad5b910b75d33c791981d699b7b27">MonitorHandsManager</a>.</p>
 
 </div>
 </div>
@@ -387,7 +412,7 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <p>Note that the status can be active serveral frames so this function is going to be called several times in a row. </p>
 
-<p>Implemented in <a class="el" href="class_swipe_manager.html#a7bd4ac45b85354febef1a1d41ba990c9">SwipeManager</a>, <a class="el" href="class_double_swipe_manager.html#abfff0a8453f7b7a130b301f3545bb7d1">DoubleSwipeManager</a>, <a class="el" href="class_tapping_manager.html#a0051a5e60171879101e87000bacfeba1">TappingManager</a>, and <a class="el" href="class_monitor_hands_manager.html#af948b2ce4650e9d3bc7a4ae896b6337b">MonitorHandsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_swipe_manager.html#a7bd4ac45b85354febef1a1d41ba990c9">SwipeManager</a>, <a class="el" href="class_tapping_manager.html#a0051a5e60171879101e87000bacfeba1">TappingManager</a>, <a class="el" href="class_double_swipe_manager.html#abfff0a8453f7b7a130b301f3545bb7d1">DoubleSwipeManager</a>, and <a class="el" href="class_monitor_hands_manager.html#af948b2ce4650e9d3bc7a4ae896b6337b">MonitorHandsManager</a>.</p>
 
 </div>
 </div>
@@ -422,7 +447,7 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <p>After this function is called the state of the gesutre is going to be set as inactive. The function should not be called again until the status of the gesture has gone to active again. </p>
 
-<p>Implemented in <a class="el" href="class_swipe_manager.html#a68d058ff60d9c5e131915a48c4dfb427">SwipeManager</a>, <a class="el" href="class_double_swipe_manager.html#a73fd44516f52429a596bdfa43fba43e9">DoubleSwipeManager</a>, <a class="el" href="class_tapping_manager.html#af0c87d976e748b527879807ff3f8dce8">TappingManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a1e0d769da3a9a39653ed43fc1641f14e">MonitorHandsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_swipe_manager.html#a68d058ff60d9c5e131915a48c4dfb427">SwipeManager</a>, <a class="el" href="class_tapping_manager.html#af0c87d976e748b527879807ff3f8dce8">TappingManager</a>, <a class="el" href="class_double_swipe_manager.html#a73fd44516f52429a596bdfa43fba43e9">DoubleSwipeManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a1e0d769da3a9a39653ed43fc1641f14e">MonitorHandsManager</a>.</p>
 
 </div>
 </div>
@@ -457,7 +482,7 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <p>In case a gesture needs passive information this is the function where it should be recorded. </p>
 
-<p>Implemented in <a class="el" href="class_swipe_manager.html#a55484933921a443efaba07d8f1863f22">SwipeManager</a>, <a class="el" href="class_double_swipe_manager.html#a1068e5fea6e76bf0f2a561fac95c0a70">DoubleSwipeManager</a>, <a class="el" href="class_tapping_manager.html#aea8d908e8510fc533f8ff89f3059191c">TappingManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a0fa62b8d0506d651b083201b7742497f">MonitorHandsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_swipe_manager.html#a55484933921a443efaba07d8f1863f22">SwipeManager</a>, <a class="el" href="class_tapping_manager.html#aea8d908e8510fc533f8ff89f3059191c">TappingManager</a>, <a class="el" href="class_double_swipe_manager.html#a1068e5fea6e76bf0f2a561fac95c0a70">DoubleSwipeManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a0fa62b8d0506d651b083201b7742497f">MonitorHandsManager</a>.</p>
 
 </div>
 </div>
@@ -493,7 +518,7 @@ Static Protected Attributes</h2></td></tr>
 <p>After this function is called the state of the gesture is going to be set as active. The function should not be called again until the status of the gesture has gone to inactive again.</p>
 <p>In this function all the atributes that are going to be needed during the gesture should be initialized. </p>
 
-<p>Implemented in <a class="el" href="class_swipe_manager.html#ab1a2546d0f22b1a5e48ba8a3ad080d11">SwipeManager</a>, <a class="el" href="class_double_swipe_manager.html#aca2d79568329780814cadcc6059e8b4d">DoubleSwipeManager</a>, <a class="el" href="class_tapping_manager.html#ab675f5d22c3d9b3ea810ec2a6888c365">TappingManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a431c37e922f88f5333ef8ab210fa2510">MonitorHandsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_swipe_manager.html#ab1a2546d0f22b1a5e48ba8a3ad080d11">SwipeManager</a>, <a class="el" href="class_tapping_manager.html#ab675f5d22c3d9b3ea810ec2a6888c365">TappingManager</a>, <a class="el" href="class_double_swipe_manager.html#aca2d79568329780814cadcc6059e8b4d">DoubleSwipeManager</a>, and <a class="el" href="class_monitor_hands_manager.html#a431c37e922f88f5333ef8ab210fa2510">MonitorHandsManager</a>.</p>
 
 </div>
 </div>
@@ -869,7 +894,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

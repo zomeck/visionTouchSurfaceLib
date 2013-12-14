@@ -91,6 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig...">ProjectiveMapping</a> class converts the coordinate system from a quadrangle to a rectangle with origen at (0,0)  
+ <a href="class_projective_mapping.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="projectivemapping_8h_source.html">projectivemapping.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -98,16 +101,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a756f432cb5e097b0912d3ff7029e520b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#a756f432cb5e097b0912d3ff7029e520b">ProjectiveMapping</a> ()</td></tr>
 <tr class="separator:a756f432cb5e097b0912d3ff7029e520b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b122aaed5c1204e5890a6d2557d62f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#ad1b122aaed5c1204e5890a6d2557d62f">ProjectiveMapping</a> (int width, int height)</td></tr>
+<tr class="memdesc:ad1b122aaed5c1204e5890a6d2557d62f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig...">ProjectiveMapping</a> constructor that sets the rectangle dimensions.  <a href="#ad1b122aaed5c1204e5890a6d2557d62f">More...</a><br/></td></tr>
 <tr class="separator:ad1b122aaed5c1204e5890a6d2557d62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fcd13d35370c01df4707dd6988475a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#a28fcd13d35370c01df4707dd6988475a">ProjectiveMapping</a> (const <a class="el" href="class_projective_mapping.html">ProjectiveMapping</a> &amp;param)</td></tr>
 <tr class="separator:a28fcd13d35370c01df4707dd6988475a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d83c924fa9302ea47853a53eddd7477"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#a2d83c924fa9302ea47853a53eddd7477">calculateMapping</a> (const vector&lt; Point2f &gt; &amp;quadrangle_corners)</td></tr>
+<tr class="memdesc:a2d83c924fa9302ea47853a53eddd7477"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculateMapping computes the transformation matrix from the space given to the rectangle  <a href="#a2d83c924fa9302ea47853a53eddd7477">More...</a><br/></td></tr>
 <tr class="separator:a2d83c924fa9302ea47853a53eddd7477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e74c30e3df257bc863a7eeafabf1c13"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#a8e74c30e3df257bc863a7eeafabf1c13">mapPoints</a> (vector&lt; Point2f &gt; &amp;points, vector&lt; Point2f &gt; &amp;mappedPoints)</td></tr>
+<tr class="memdesc:a8e74c30e3df257bc863a7eeafabf1c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">mapPoints converts form quadrangle to rectangle  <a href="#a8e74c30e3df257bc863a7eeafabf1c13">More...</a><br/></td></tr>
 <tr class="separator:a8e74c30e3df257bc863a7eeafabf1c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a556d7af45a219c3da2b6d3eedc862971"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#a556d7af45a219c3da2b6d3eedc862971">mapPoints</a> (Point2i &amp;point, Point2i &amp;mappedPoint)</td></tr>
+<tr class="memdesc:a556d7af45a219c3da2b6d3eedc862971"><td class="mdescLeft">&#160;</td><td class="mdescRight">mapPoints converts form quadrangle to rectangle  <a href="#a556d7af45a219c3da2b6d3eedc862971">More...</a><br/></td></tr>
 <tr class="separator:a556d7af45a219c3da2b6d3eedc862971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b5454c19f79e21734e3c3eddd167f55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#a2b5454c19f79e21734e3c3eddd167f55">warpMatrix</a> (Mat &amp;matrix, Mat &amp;warpedMatrix, Size &amp;warpedSize)</td></tr>
+<tr class="memdesc:a2b5454c19f79e21734e3c3eddd167f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">warpMatrix transforms a Mat from quadrangle space to a rectangle sapce  <a href="#a2b5454c19f79e21734e3c3eddd167f55">More...</a><br/></td></tr>
 <tr class="separator:a2b5454c19f79e21734e3c3eddd167f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -115,7 +123,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a3f33734e4b61eff97d2cdb0ef288693e"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projective_mapping.html#a3f33734e4b61eff97d2cdb0ef288693e">transformationMatrix</a></td></tr>
 <tr class="separator:a3f33734e4b61eff97d2cdb0ef288693e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig...">ProjectiveMapping</a> class converts the coordinate system from a quadrangle to a rectangle with origen at (0,0) </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a756f432cb5e097b0912d3ff7029e520b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +164,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig...">ProjectiveMapping</a> constructor that sets the rectangle dimensions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>of the rectangle </td></tr>
+    <tr><td class="paramname">height</td><td>of the rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -196,6 +215,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>calculateMapping computes the transformation matrix from the space given to the rectangle </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quadrangle_corners</td><td>contains the quadrangle corners </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a8e74c30e3df257bc863a7eeafabf1c13"></a>
@@ -230,6 +257,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>mapPoints converts form quadrangle to rectangle </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>input points in the quadrangle space </td></tr>
+    <tr><td class="paramname">mappedPoints</td><td>output points in rectangle space </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a556d7af45a219c3da2b6d3eedc862971"></a>
@@ -263,6 +299,15 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>mapPoints converts form quadrangle to rectangle </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>input point in the quadrangle space </td></tr>
+    <tr><td class="paramname">mappedPoints</td><td>output point in rectangle space </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -304,6 +349,16 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>warpMatrix transforms a Mat from quadrangle space to a rectangle sapce </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>input Mat with the data to be warped </td></tr>
+    <tr><td class="paramname">warpedMatrix</td><td>output Mat with the warped data </td></tr>
+    <tr><td class="paramname">warpedSize</td><td>size of the warpedMatrix is going to have </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -334,7 +389,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

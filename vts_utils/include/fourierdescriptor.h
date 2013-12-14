@@ -10,7 +10,13 @@
 using namespace std;
 using namespace cv;
 
+/**
+ * @brief The FourierDescriptor class computes the fourier descriptor of a hand and matches it with a class of a dictionary
+ *
+ *
+ The class implements several distance metrics (L2 norm,L1 norm and canberra) that can be used in order to know the distance from a query binary mask to a dictionary class.
 
+ */
 class FourierDescriptor
 {
 public:

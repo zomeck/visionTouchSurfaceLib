@@ -11,6 +11,11 @@
 using namespace cv;
 using namespace std;
 
+/**
+ * @brief The KalmanFilteringSwipe class is an wraper to opencv KalmanFilter class
+ *
+ This wraper makes the opencv KalmanFilter class fit better with the library structure
+ */
 class KalmanFilteringSwipe
 {
 public:

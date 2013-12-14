@@ -1,5 +1,5 @@
 <map id="EventData" name="EventData">
 <area shape="rect" id="node2" href="$class_frame_data.html" title="FrameData" alt="" coords="95,101,180,131"/>
-<area shape="rect" id="node4" href="$class_projective_mapping.html" title="ProjectiveMapping" alt="" coords="5,5,133,35"/>
+<area shape="rect" id="node4" href="$class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig..." alt="" coords="5,5,133,35"/>
 <area shape="rect" id="node6" href="$class_leap_mapping.html" title="LeapMapping" alt="" coords="157,5,256,35"/>
 </map>

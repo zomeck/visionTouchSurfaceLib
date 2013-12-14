@@ -90,6 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_alt_tab_event_manager.html" title="The AltTabEventManager class inherits from IOEventManager to implement Alt+tab key shortcut using Xli...">AltTabEventManager</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement Alt+tab key shortcut using Xlib.  
+ <a href="class_alt_tab_event_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="alttabeventmanager_8h_source.html">alttabeventmanager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AltTabEventManager:</div>
@@ -112,8 +115,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaad85731eda7f9052deadf3068e9fc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8119cef45ba6425ef33aeed6b33cc17d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_alt_tab_event_manager.html#a8119cef45ba6425ef33aeed6b33cc17d">~AltTabEventManager</a> ()</td></tr>
 <tr class="separator:a8119cef45ba6425ef33aeed6b33cc17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3615ddd4bbdb4df9a7a31790d424376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_alt_tab_event_manager.html#ab3615ddd4bbdb4df9a7a31790d424376">set</a> (const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;param)</td></tr>
-<tr class="separator:ab3615ddd4bbdb4df9a7a31790d424376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6734103dbef6766a88f0052e2200fadc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc">initData</a> ()</td></tr>
 <tr class="memdesc:a6734103dbef6766a88f0052e2200fadc"><td class="mdescLeft">&#160;</td><td class="mdescRight">initData This function initializes the atributes needed for using the event later on  <a href="#a6734103dbef6766a88f0052e2200fadc">More...</a><br/></td></tr>
 <tr class="separator:a6734103dbef6766a88f0052e2200fadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,7 +137,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_o_event_manager.html#aabb7ea3bb0e61aa81516703213de90aa">hasBeenInit</a></td></tr>
 <tr class="separator:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_alt_tab_event_manager.html" title="The AltTabEventManager class inherits from IOEventManager to implement Alt+tab key shortcut using Xli...">AltTabEventManager</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement Alt+tab key shortcut using Xlib. </p>
+<p>This class will simulate the alt+tab or alt+shift+tab depending if the offset given when calling <a class="el" href="class_alt_tab_event_manager.html#afc66787ef2fb6fa6af059f63ae4ca756" title="gestureInProgressUpdate This function is called when the event is happening">AltTabEventManager::gestureInProgressUpdate()</a> is positive or negative. Tab pressing is going to be simulated as many tames as <a class="el" href="class_alt_tab_event_manager.html#afc66787ef2fb6fa6af059f63ae4ca756" title="gestureInProgressUpdate This function is called when the event is happening">AltTabEventManager::gestureInProgressUpdate()</a> is called </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aaad85731eda7f9052deadf3068e9fc82"></a>
 <div class="memitem">
 <div class="memproto">
@@ -302,32 +306,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab3615ddd4bbdb4df9a7a31790d424376"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AltTabEventManager::set </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>param</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_i_o_event_manager.html#a1fcc7331c51e2f54580bf3593b884a25">IOEventManager</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="alttabeventmanager_8h_source.html">alttabeventmanager.h</a></li>
 <li><a class="el" href="alttabeventmanager_8cpp.html">alttabeventmanager.cpp</a></li>
@@ -335,7 +313,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

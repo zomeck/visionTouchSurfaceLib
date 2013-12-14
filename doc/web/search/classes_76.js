@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector',['Vector',['../struct_leap_1_1_vector.html',1,'Leap']]]
+  ['visionprocessor',['VisionProcessor',['../class_vision_processor.html',1,'']]]
 ];

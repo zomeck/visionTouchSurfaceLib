@@ -95,28 +95,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;X11/Xutil.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;X11/extensions/XTest.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="class_alt_tab_event_manager.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_alt_tab_event_manager.html">AltTabEventManager</a> : <span class="keyword">public</span> <a class="code" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Display *dpy;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_alt_tab_event_manager.html#aaad85731eda7f9052deadf3068e9fc82">AltTabEventManager</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_alt_tab_event_manager.html#a8119cef45ba6425ef33aeed6b33cc17d">~AltTabEventManager</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">set</span>(<span class="keyword">const</span> <a class="code" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> &amp;param );</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc" title="initData This function initializes the atributes needed for using the event later on...">initData</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#af50dcf0838e346090190e12e81f40206" title="gestureInitialize This function is called when the event needs to be started">gestureInitialize</a>( <a class="code" href="class_event_data.html">EventData</a> &amp; param );</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#afc66787ef2fb6fa6af059f63ae4ca756" title="gestureInProgressUpdate This function is called when the event is happening">gestureInProgressUpdate</a>( <a class="code" href="class_event_data.html">EventData</a> &amp; param );</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#abd9ba3b6a983711348cea9f23810a7b8" title="gestureFinalize This function is called when the event needs to be finalized">gestureFinalize</a>( <a class="code" href="class_event_data.html">EventData</a> &amp; param );</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_alt_tab_event_manager.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_alt_tab_event_manager.html" title="The AltTabEventManager class inherits from IOEventManager to implement Alt+tab key shortcut using Xli...">AltTabEventManager</a> : <span class="keyword">public</span> <a class="code" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Display *dpy;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_alt_tab_event_manager.html#aaad85731eda7f9052deadf3068e9fc82">AltTabEventManager</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_alt_tab_event_manager.html#a8119cef45ba6425ef33aeed6b33cc17d">~AltTabEventManager</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//void set(const IOEventManager &amp;param );</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc" title="initData This function initializes the atributes needed for using the event later on...">initData</a>();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // ALTTABEVENTMANAGER_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#af50dcf0838e346090190e12e81f40206" title="gestureInitialize This function is called when the event needs to be started">gestureInitialize</a>( <a class="code" href="class_event_data.html">EventData</a> &amp; param );</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#afc66787ef2fb6fa6af059f63ae4ca756" title="gestureInProgressUpdate This function is called when the event is happening">gestureInProgressUpdate</a>( <a class="code" href="class_event_data.html">EventData</a> &amp; param );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_alt_tab_event_manager.html#abd9ba3b6a983711348cea9f23810a7b8" title="gestureFinalize This function is called when the event needs to be finalized">gestureFinalize</a>( <a class="code" href="class_event_data.html">EventData</a> &amp; param );</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // ALTTABEVENTMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

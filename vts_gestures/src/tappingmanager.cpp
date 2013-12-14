@@ -52,17 +52,21 @@ void TappingManager::onStatusActive(FrameData &params)
         kmCMapped=kmMouse.predictWithoutObs();
     }
 
-    bool hasMoved=std::abs( kmCMapped.x - prevCMapped.x )>minXOffset || std::abs( kmCMapped.y - prevCMapped.y)>minYOffset ;
+    float offset=std::abs( kmCMapped.x - prevCMapped.x );
+
+    bool hasMoved= offset>minXOffset || std::abs( kmCMapped.y - prevCMapped.y)>minYOffset ;
     //cout<<"TAPPING progress "<<kmCMapped<<endl;
     EventData eventParam;
     eventParam.frameData=&params;
     if( hasMoved ){
         eventParam.mousePosition=kmCMapped;
         prevCMapped=kmCMapped;
+        eventParam.offset=offset;
     }else{
         eventParam.mousePosition=prevCMapped;
+        eventParam.offset=0;
     }
-    eventParam.offset=0;
+
 
     iomanagerMutex.lock();
 
@@ -205,146 +209,3 @@ bool TappingManager::isGestureDetected(FrameData &params)
     bool movementDetected=params.hands->size() ==1 && params.hands->at(0).fingers.size()==1 && !params.hands->at(0).foundPalm;
     return movementDetected;
 }
-
-/*
-void TappingManager::updateStatus(FrameData &params)
-{
-    //if( !isDrag && contoursFFiltered.size()==1 ){
-    bool movementDetected=params.contourHandsFiltered->size()==1 && params.contoursFingersHands->at(0).size()==1 && !params.foundPalmHands->at(0);
-
-    if( movementDetected ){
-
-        resetEndCounter();
-        decreaseInitCounter();
-
-    }else{
-        resetInitCounter();
-
-        decreaseEndCounter();
-    }
-
-
-
-
-    //if( movementDetected ){
-
-
-    //drawContours( drawingHand, contoursFFiltered, 0, CV_RGB(0,255,0) , 2 );
-
-    Point2i cMapped,center;
-    if( movementDetected ){
-        Rect fBB=boundingRect( params.contoursFingersHands->at(0).at(0) );
-
-        center.x=fBB.tl().x+fBB.width/2;
-        center.y=fBB.br().y;
-        params.kinect2screen->mapPoints( center, cMapped );
-    }
-
-    if( state==STATUS_INIT ){
-
-        //initializing gesture
-        //cout<<"TAPPING init"<<endl;
-        if( !movementDetected ){
-            cout<<"WARNING this should not be happening"<<endl;
-        }
-
-        kmMouse.initialiseGesture( cMapped,1 );
-
-        EventData eventParam;
-        eventParam.frameData=&params;
-        eventParam.mousePosition=cMapped;
-        eventParam.offset=0;
-
-        cout<<"TAPPING init "<<cMapped<<endl;
-
-        iomanager->gestureInitialize( eventParam );
-        //state=0;
-
-        //initialized now change to active
-        state=STATUS_ACTIVE;
-    }else if( state==STATUS_ACTIVE ){
-        //progress
-
-
-        Point2i kmCMapped;
-        if( movementDetected ){
-            kmCMapped=kmMouse.predictUpdateUsingObs( cMapped );
-        }else{
-            kmCMapped=kmMouse.predictWithoutObs();
-        }
-
-        cout<<"TAPPING progress "<<kmCMapped<<endl;
-        EventData eventParam;
-        eventParam.frameData=&params;
-        eventParam.mousePosition=kmCMapped;
-        eventParam.offset=0;
-
-        iomanager->gestureInProgressUpdate( eventParam );
-
-        /*
-            if( !clickDone ){
-                Rect fBB=boundingRect( contoursFFiltered.at(0) );
-                Point2i cMapped,center;
-                center.x=fBB.tl().x+fBB.width/2;
-                center.y=fBB.br().y;
-                kinect2screen.mapPoints( center, cMapped );
-                sampleMouseMove( cMapped.x, cMapped.y );
-                XTestFakeButtonEvent (dpy, 1, true,  CurrentTime);
-                XFlush(dpy);
-                XTestFakeButtonEvent (dpy, 1, false,  CurrentTime);
-                XFlush(dpy);
-                clickDone=true;
-
-            }
-
-
-    }else if( state==STATUS_FINISH ){
-
-
-
-
-        Point2i kmCMapped=kmMouse.predictWithoutObs();
-
-        cout<<"TAPPING end "<<kmCMapped <<endl;
-
-        EventData eventParam;
-        eventParam.frameData=&params;
-        eventParam.mousePosition=kmCMapped;
-        eventParam.offset=0;
-
-        iomanager->gestureFinalize( eventParam );
-
-        //finished now go to inactive
-        state=STATUS_INACTIVE;
-    }
-
-    //}
-    /*else{
-
-        if( state==0 ){
-            //transition, should use a counter in the class
-
-            state=1;
-        }else if( state==1 ){
-            //finish gesture
-            cout<<"TAPPING end"<<endl;
-
-            Point2i kmCMapped=kmMouse.predictWithoutObs();
-
-            EventData eventParam;
-            eventParam.frameData=&params;
-            eventParam.mousePosition=kmCMapped;
-            eventParam.offset=0;
-
-            iomanager->gestureFinalize( eventParam );
-
-            state=-2;
-
-            //clickDone=false;
-        }
-
-    }
-
-}
-*/
-

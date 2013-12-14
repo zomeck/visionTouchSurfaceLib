@@ -12,7 +12,11 @@ var searchData=
   ['getfileheader',['getFileHeader',['../class_store_hand_mask.html#a20b5e1c260e32de9ffb813feda113f37',1,'StoreHandMask']]],
   ['getfolder',['getFolder',['../class_store_hand_mask.html#a8b42b8b7815d8312a4367b5f7cb9f013',1,'StoreHandMask']]],
   ['getimage',['getImage',['../class_kinect_handler.html#a09676d8936a38822e0f65c517ab9d2da',1,'KinectHandler']]],
+  ['getiomanager',['getIOManager',['../class_gesture_manager.html#a2267d0a19c58aad8b2435af80d530d0b',1,'GestureManager']]],
+  ['getkinect2screen',['getKinect2screen',['../class_vision_processor.html#af55ad150c96121abd3ba1d2ab93f506e',1,'VisionProcessor']]],
+  ['getkinectresolution',['getKinectResolution',['../class_vision_processor.html#ac1cb663d78871e4d952de5e575da7cfb',1,'VisionProcessor']]],
   ['getoffset',['getOffset',['../class_store_hand_mask.html#af7d86e4ea87e5184a339a9196bb4c8de',1,'StoreHandMask']]],
   ['getresheight',['getResHeight',['../class_kinect_handler.html#a6025e66e33393c976051625f5e42e3ce',1,'KinectHandler']]],
-  ['getreswidth',['getResWidth',['../class_kinect_handler.html#a50546c6d006fb49c15573f1298cd9713',1,'KinectHandler']]]
+  ['getreswidth',['getResWidth',['../class_kinect_handler.html#a50546c6d006fb49c15573f1298cd9713',1,'KinectHandler']]],
+  ['getscreentransformation',['getScreenTransformation',['../class_vision_processor.html#a200a32f9045331bfe292d79ddd86e6c2',1,'VisionProcessor']]]
 ];

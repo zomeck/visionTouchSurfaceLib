@@ -90,6 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_double_swipe_manager.html" title="The DoubleSwipeManager class inherits from GestureManager to implement a double handed gesture...">DoubleSwipeManager</a> class inherits from <a class="el" href="class_gesture_manager.html" title="The GestureManager class is a pure abstract class that provides an interface to create any gesture an...">GestureManager</a> to implement a double handed gesture.  
+ <a href="class_double_swipe_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="doubleswipemanager_8h_source.html">doubleswipemanager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DoubleSwipeManager:</div>
@@ -111,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc3ec8fbadb53835193b34283c4741ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_double_swipe_manager.html#afc3ec8fbadb53835193b34283c4741ab">DoubleSwipeManager</a> ()</td></tr>
 <tr class="separator:afc3ec8fbadb53835193b34283c4741ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da7416edb2bb3b342a8643a515208ff"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_double_swipe_manager.html#a5da7416edb2bb3b342a8643a515208ff">isGestureDetected</a> (<a class="el" href="class_frame_data.html">FrameData</a> &amp;params)</td></tr>
-<tr class="memdesc:a5da7416edb2bb3b342a8643a515208ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">isGestureDetected determines if the gesture is detected with the given data  <a href="#a5da7416edb2bb3b342a8643a515208ff">More...</a><br/></td></tr>
+<tr class="memdesc:a5da7416edb2bb3b342a8643a515208ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">isGestureDetected determines whether the gesutre has been detected or not  <a href="#a5da7416edb2bb3b342a8643a515208ff">More...</a><br/></td></tr>
 <tr class="separator:a5da7416edb2bb3b342a8643a515208ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a760c5fa1e44514882bb911611a17a4b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_double_swipe_manager.html#a760c5fa1e44514882bb911611a17a4b9">generateGestureData</a> (<a class="el" href="class_frame_data.html">FrameData</a> &amp;params)</td></tr>
 <tr class="memdesc:a760c5fa1e44514882bb911611a17a4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">generateGestureData This function generates the data needed for the gesture manager  <a href="#a760c5fa1e44514882bb911611a17a4b9">More...</a><br/></td></tr>
@@ -139,6 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa45d880b6f77684d70c4246e9375ae4c inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#aa45d880b6f77684d70c4246e9375ae4c">setIOManager</a> (<a class="el" href="class_i_o_event_manager.html">IOEventManager</a> *eventManager)</td></tr>
 <tr class="memdesc:aa45d880b6f77684d70c4246e9375ae4c inherit pub_methods_class_gesture_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">setIOManager This function changes the event manager associated with this class  <a href="#aa45d880b6f77684d70c4246e9375ae4c">More...</a><br/></td></tr>
 <tr class="separator:aa45d880b6f77684d70c4246e9375ae4c inherit pub_methods_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2267d0a19c58aad8b2435af80d530d0b inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_i_o_event_manager.html">IOEventManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a2267d0a19c58aad8b2435af80d530d0b">getIOManager</a> ()</td></tr>
+<tr class="separator:a2267d0a19c58aad8b2435af80d530d0b inherit pub_methods_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e414e7840ebc76700fd76193b22ee3c inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a3e414e7840ebc76700fd76193b22ee3c">isActive</a> () const </td></tr>
 <tr class="separator:a3e414e7840ebc76700fd76193b22ee3c inherit pub_methods_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad328a552878f80a429de34eb53322280 inherit pub_methods_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#ad328a552878f80a429de34eb53322280">getCounterInitMax</a> () const </td></tr>
@@ -182,7 +187,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6b2de13be6b1feed8ec36fd87d0bdaad inherit pro_static_attribs_class_gesture_manager"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gesture_manager.html#a6b2de13be6b1feed8ec36fd87d0bdaad">STATUS_FINISH</a> =1</td></tr>
 <tr class="separator:a6b2de13be6b1feed8ec36fd87d0bdaad inherit pro_static_attribs_class_gesture_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_double_swipe_manager.html" title="The DoubleSwipeManager class inherits from GestureManager to implement a double handed gesture...">DoubleSwipeManager</a> class inherits from <a class="el" href="class_gesture_manager.html" title="The GestureManager class is a pure abstract class that provides an interface to create any gesture an...">GestureManager</a> to implement a double handed gesture. </p>
+<p>When the gesture is detected it provides the centroid of both hands as the mouse position and the offset variable is set with the diference of distances between the hands at the current frame with the hands from the previous frame. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afc3ec8fbadb53835193b34283c4741ab"></a>
 <div class="memitem">
 <div class="memproto">
@@ -256,14 +264,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>isGestureDetected determines if the gesture is detected with the given data </p>
+<p>isGestureDetected determines whether the gesutre has been detected or not </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>data of the frame needed for the gesture </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True when the gesture is detected </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if and only if two hands are detected and each of them has at least a finger tip or a palm detected </dd></dl>
 
 <p>Implements <a class="el" href="class_gesture_manager.html#ab394eac123e4313eed3f0d1bd142b305">GestureManager</a>.</p>
 
@@ -417,7 +425,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

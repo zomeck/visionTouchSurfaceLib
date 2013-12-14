@@ -97,7 +97,7 @@ Collaboration diagram for FrameData:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_frame_data__coll__graph.png" border="0" usemap="#_frame_data_coll__map" alt="Collaboration graph"/></div>
 <map name="_frame_data_coll__map" id="_frame_data_coll__map">
-<area shape="rect" id="node2" href="class_projective_mapping.html" title="ProjectiveMapping" alt="" coords="5,5,133,35"/><area shape="rect" id="node4" href="class_leap_mapping.html" title="LeapMapping" alt="" coords="157,5,256,35"/></map>
+<area shape="rect" id="node2" href="class_projective_mapping.html" title="The ProjectiveMapping class converts the coordinate system from a quadrangle to a rectangle with orig..." alt="" coords="5,5,133,35"/><area shape="rect" id="node4" href="class_leap_mapping.html" title="LeapMapping" alt="" coords="157,5,256,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -113,12 +113,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6f491aff6b8e2befbf2e00c04664616c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a091882d25611b1b9a75ecd948f1e1e08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_leap_mapping.html">LeapMapping</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_data.html#a091882d25611b1b9a75ecd948f1e1e08">leap2screen</a></td></tr>
 <tr class="separator:a091882d25611b1b9a75ecd948f1e1e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d67f8262f1fb11366459edbecf72b17"><td class="memItemLeft" align="right" valign="top">Point3i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_data.html#a2d67f8262f1fb11366459edbecf72b17">matchPointable</a></td></tr>
-<tr class="separator:a2d67f8262f1fb11366459edbecf72b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6d19f89b60d8775febb1731e059b1e"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_data.html#ace6d19f89b60d8775febb1731e059b1e">depthMap</a></td></tr>
 <tr class="separator:ace6d19f89b60d8775febb1731e059b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b65521e39265b51baa03d1945c60845"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_data.html#a4b65521e39265b51baa03d1945c60845">rgbDebug</a></td></tr>
 <tr class="separator:a4b65521e39265b51baa03d1945c60845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd68d6226e02b688fca31098291a294"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_data.html#afdd68d6226e02b688fca31098291a294">handsMaskRaw</a></td></tr>
+<tr class="separator:afdd68d6226e02b688fca31098291a294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0d0bbf96201dfa7cb3799bcd71887d"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_data.html#aef0d0bbf96201dfa7cb3799bcd71887d">fingersMaskRaw</a></td></tr>
+<tr class="separator:aef0d0bbf96201dfa7cb3799bcd71887d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a25212bee682363205562fae39028c3d6"></a>
@@ -149,12 +151,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aef0d0bbf96201dfa7cb3799bcd71887d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameData::fingersMaskRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae278f2311400f785287676a15c63e74e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">vector&lt;<a class="el" href="class_hand.html">Hand</a>&gt;* FrameData::hands</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afdd68d6226e02b688fca31098291a294"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameData::handsMaskRaw</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -185,18 +211,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2d67f8262f1fb11366459edbecf72b17"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Point3i FrameData::matchPointable</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a4b65521e39265b51baa03d1945c60845"></a>
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +230,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

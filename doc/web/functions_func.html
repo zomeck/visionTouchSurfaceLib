@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
       <li><a href="#index_w"><span>w</span></a></li>
       <li><a href="#index_0x7e"><span>~</span></a></li>
     </ul>
@@ -126,8 +127,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_fourier_descriptor.html#a492b2d8e2ce4576f52d9c6253c04feb7">FourierDescriptor</a>
 </li>
 <li>calculateMapping()
-: <a class="el" href="class_projective_mapping.html#a2d83c924fa9302ea47853a53eddd7477">ProjectiveMapping</a>
-, <a class="el" href="class_leap_mapping.html#a0e3cab64319f896df19306e91823d9ce">LeapMapping</a>
+: <a class="el" href="class_leap_mapping.html#a0e3cab64319f896df19306e91823d9ce">LeapMapping</a>
+, <a class="el" href="class_projective_mapping.html#a2d83c924fa9302ea47853a53eddd7477">ProjectiveMapping</a>
+</li>
+<li>createMaxDepthWithHistogram()
+: <a class="el" href="class_vision_processor.html#a9059aab8878d435499c59ac4e5a732ac">VisionProcessor</a>
 </li>
 </ul>
 
@@ -197,8 +201,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_alt_tab_event_manager.html#afc66787ef2fb6fa6af059f63ae4ca756">AltTabEventManager</a>
 , <a class="el" href="class_i_o_event_manager.html#a17f3b312ca460fdb4e784148fa41b4ac">IOEventManager</a>
 , <a class="el" href="class_scroll_up_down_manager.html#af160ab8fa9cb3bb9f4f24c4cc4a44a5b">ScrollUpDownManager</a>
-, <a class="el" href="class_store_hand_mask.html#a6a23974b8b8b40de481d76042a0b0ac7">StoreHandMask</a>
 , <a class="el" href="class_single_click_hold_event_manager.html#a6edd44aadec8f75269dfb33ab1b9ffea">SingleClickHoldEventManager</a>
+, <a class="el" href="class_store_hand_mask.html#a6a23974b8b8b40de481d76042a0b0ac7">StoreHandMask</a>
 </li>
 <li>GestureManager()
 : <a class="el" href="class_gesture_manager.html#a5ecfa8bb990c8b2064df5051848845a1">GestureManager</a>
@@ -224,6 +228,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getImage()
 : <a class="el" href="class_kinect_handler.html#a09676d8936a38822e0f65c517ab9d2da">KinectHandler</a>
 </li>
+<li>getIOManager()
+: <a class="el" href="class_gesture_manager.html#a2267d0a19c58aad8b2435af80d530d0b">GestureManager</a>
+</li>
+<li>getKinect2screen()
+: <a class="el" href="class_vision_processor.html#af55ad150c96121abd3ba1d2ab93f506e">VisionProcessor</a>
+</li>
+<li>getKinectResolution()
+: <a class="el" href="class_vision_processor.html#ac1cb663d78871e4d952de5e575da7cfb">VisionProcessor</a>
+</li>
 <li>getOffset()
 : <a class="el" href="class_store_hand_mask.html#af7d86e4ea87e5184a339a9196bb4c8de">StoreHandMask</a>
 </li>
@@ -232,6 +245,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>getResWidth()
 : <a class="el" href="class_kinect_handler.html#a50546c6d006fb49c15573f1298cd9713">KinectHandler</a>
+</li>
+<li>getScreenTransformation()
+: <a class="el" href="class_vision_processor.html#a200a32f9045331bfe292d79ddd86e6c2">VisionProcessor</a>
 </li>
 </ul>
 
@@ -246,12 +262,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>init()
 : <a class="el" href="class_kinect_handler.html#a2bbde45f8c027f98354c46811faaab75">KinectHandler</a>
+, <a class="el" href="class_vision_processor.html#affc907335abd960f248a9481a878bcad">VisionProcessor</a>
 </li>
 <li>initData()
-: <a class="el" href="class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc">AltTabEventManager</a>
+: <a class="el" href="class_i_o_event_manager.html#aeb8d80450df0cb5808b2fd287edde617">IOEventManager</a>
 , <a class="el" href="class_scroll_up_down_manager.html#a882b2cea560cfe9fb31caf410d6a5845">ScrollUpDownManager</a>
+, <a class="el" href="class_alt_tab_event_manager.html#a6734103dbef6766a88f0052e2200fadc">AltTabEventManager</a>
 , <a class="el" href="class_single_click_hold_event_manager.html#a40c15e8b960ff1418a9c5f812350aa2a">SingleClickHoldEventManager</a>
-, <a class="el" href="class_i_o_event_manager.html#aeb8d80450df0cb5808b2fd287edde617">IOEventManager</a>
 , <a class="el" href="class_store_hand_mask.html#a5db1adb14ac2c859ce7d2a55922be901">StoreHandMask</a>
 </li>
 <li>initialiseGesture()
@@ -265,9 +282,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>isGestureDetected()
 : <a class="el" href="class_gesture_manager.html#ab394eac123e4313eed3f0d1bd142b305">GestureManager</a>
-, <a class="el" href="class_swipe_manager.html#ac524d59d0a1fb1c575db4115c43faf3c">SwipeManager</a>
 , <a class="el" href="class_tapping_manager.html#af23cb1ac9f54b7fad9593c967835e2f3">TappingManager</a>
 , <a class="el" href="class_monitor_hands_manager.html#abadad5b910b75d33c791981d699b7b27">MonitorHandsManager</a>
+, <a class="el" href="class_swipe_manager.html#ac524d59d0a1fb1c575db4115c43faf3c">SwipeManager</a>
 , <a class="el" href="class_double_swipe_manager.html#a5da7416edb2bb3b342a8643a515208ff">DoubleSwipeManager</a>
 </li>
 </ul>
@@ -346,8 +363,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>predictWithoutObs()
 : <a class="el" href="class_kalman_filtering_swipe.html#abc4b580be403f6f79631a34bb7b0c953">KalmanFilteringSwipe</a>
 </li>
+<li>processFrame()
+: <a class="el" href="class_vision_processor.html#ad4f74faa69243ee1f8a7244938cc4826">VisionProcessor</a>
+</li>
 <li>ProjectiveMapping()
-: <a class="el" href="class_projective_mapping.html#ad1b122aaed5c1204e5890a6d2557d62f">ProjectiveMapping</a>
+: <a class="el" href="class_projective_mapping.html#a756f432cb5e097b0912d3ff7029e520b">ProjectiveMapping</a>
 </li>
 </ul>
 
@@ -366,12 +386,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ScrollUpDownManager()
 : <a class="el" href="class_scroll_up_down_manager.html#a9f6570174a8601c541f0d06304335088">ScrollUpDownManager</a>
 </li>
+<li>segmentScreen()
+: <a class="el" href="class_vision_processor.html#a55e96514ba9e0e324d0b4030e29d74e4">VisionProcessor</a>
+</li>
 <li>set()
-: <a class="el" href="class_alt_tab_event_manager.html#ab3615ddd4bbdb4df9a7a31790d424376">AltTabEventManager</a>
-, <a class="el" href="class_scroll_up_down_manager.html#ada76cacd5896af0dd9687c63b479a295">ScrollUpDownManager</a>
-, <a class="el" href="class_single_click_hold_event_manager.html#a66724b3e249ead0e937217197495fbfc">SingleClickHoldEventManager</a>
-, <a class="el" href="class_i_o_event_manager.html#a1fcc7331c51e2f54580bf3593b884a25">IOEventManager</a>
-, <a class="el" href="class_store_hand_mask.html#af8b1184613065c1f6471a367d58ce00e">StoreHandMask</a>
+: <a class="el" href="class_store_hand_mask.html#af8b1184613065c1f6471a367d58ce00e">StoreHandMask</a>
 </li>
 <li>setButton()
 : <a class="el" href="class_single_click_hold_event_manager.html#acc9a4b33696cb4496578ef47af7cf654">SingleClickHoldEventManager</a>
@@ -390,6 +409,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setIOManager()
 : <a class="el" href="class_gesture_manager.html#aa45d880b6f77684d70c4246e9375ae4c">GestureManager</a>
+</li>
+<li>setKinect2screen()
+: <a class="el" href="class_vision_processor.html#ac187df96c009357f078661a597d13e27">VisionProcessor</a>
 </li>
 <li>setOffset()
 : <a class="el" href="class_store_hand_mask.html#a523bfdf289e58c7ab783f5f67d65c06a">StoreHandMask</a>
@@ -425,6 +447,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>updateStatus()
 : <a class="el" href="class_gesture_manager.html#a4440bfd95bfbb70df4db7f617b3a500c">GestureManager</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>VisionProcessor()
+: <a class="el" href="class_vision_processor.html#a0dfc833174259e8b57fd658669b76c6b">VisionProcessor</a>
 </li>
 </ul>
 
@@ -466,7 +495,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

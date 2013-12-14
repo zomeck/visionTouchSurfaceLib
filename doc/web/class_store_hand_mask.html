@@ -92,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_store_hand_mask.html" title="The StoreHandMask class inherits from IOEventManager to implement an event that stores all hands foun...">StoreHandMask</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement an event that stores all hands found in a frame.  
+ <a href="class_store_hand_mask.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="storehandmask_8h_source.html">storehandmask.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for StoreHandMask:</div>
@@ -157,11 +160,18 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a71c5782a695c9559c8f920478677a312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa25e8dae50c5348218e41feac940da2c"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_store_hand_mask.html#aa25e8dae50c5348218e41feac940da2c">counter</a></td></tr>
 <tr class="separator:aa25e8dae50c5348218e41feac940da2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20482447408bc50a11372dfc4cf8bf0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_store_hand_mask.html#a20482447408bc50a11372dfc4cf8bf0e">waitingFpN</a></td></tr>
+<tr class="separator:a20482447408bc50a11372dfc4cf8bf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf53e63d5f72cdd30c6d4c0ff6fd7e45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_store_hand_mask.html#acf53e63d5f72cdd30c6d4c0ff6fd7e45">fpNMax</a></td></tr>
+<tr class="separator:acf53e63d5f72cdd30c6d4c0ff6fd7e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_i_o_event_manager"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_i_o_event_manager')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_i_o_event_manager.html">IOEventManager</a></td></tr>
 <tr class="memitem:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_o_event_manager.html#aabb7ea3bb0e61aa81516703213de90aa">hasBeenInit</a></td></tr>
 <tr class="separator:aabb7ea3bb0e61aa81516703213de90aa inherit pro_attribs_class_i_o_event_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_store_hand_mask.html" title="The StoreHandMask class inherits from IOEventManager to implement an event that stores all hands foun...">StoreHandMask</a> class inherits from <a class="el" href="class_i_o_event_manager.html" title="The IOEventManager class is a pure abstract class that provides an interface to create any input/outp...">IOEventManager</a> to implement an event that stores all hands found in a frame. </p>
+<p>This class will store binary images of the hand masks found in the current frame to the folder specified. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1e64950476ae6495ee233993c596c11f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -360,9 +370,6 @@ Protected Attributes</h2></td></tr>
 <a class="anchor" id="af8b1184613065c1f6471a367d58ce00e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void StoreHandMask::set </td>
@@ -372,14 +379,7 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_i_o_event_manager.html#a1fcc7331c51e2f54580bf3593b884a25">IOEventManager</a>.</p>
 
 </div>
 </div>
@@ -516,6 +516,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acf53e63d5f72cdd30c6d4c0ff6fd7e45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StoreHandMask::fpNMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a71c5782a695c9559c8f920478677a312"></a>
 <div class="memitem">
 <div class="memproto">
@@ -536,6 +556,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a20482447408bc50a11372dfc4cf8bf0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StoreHandMask::waitingFpN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="storehandmask_8h_source.html">storehandmask.h</a></li>
 <li><a class="el" href="storehandmask_8cpp.html">storehandmask.cpp</a></li>
@@ -543,7 +583,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 4 2013 19:33:56 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 14 2013 23:25:51 for Vision Touch Surface Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
